@@ -1,0 +1,52 @@
+/* -------Fonts ------------
+# EuclidSquare-Regular  400
+# EuclidSquare-Bold 700
+# Orborn-Regular 400
+# Orborn 400
+---------------------------*/
+
+@font-face {
+    font-family: 'EuclidSquare-Regular';
+    src: url('../fonts/EuclidSquare-Regular.eot');
+    src: url('../fonts/') format('embedded-opentype'),
+         url('../fonts/EuclidSquare-Regular.svg#EuclidSquare-Regular') format('svg'),
+         url('../fonts/EuclidSquare-Regular.ttf') format('truetype'),
+         url('../fonts/EuclidSquare-Regular.woff') format('woff'),
+         url('../fonts/EuclidSquare-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'EuclidSquare-Bold';
+    src: url('../fonts/EuclidSquare-Bold.eot');
+    src: url('../fonts/EuclidSquare-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EuclidSquare-Bold.svg#EuclidSquare-Bold') format('svg'),
+         url('../fonts/EuclidSquare-Bold.ttf') format('truetype'),
+         url('../fonts/EuclidSquare-Bold.woff') format('woff'),
+         url('../fonts/EuclidSquare-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Orborn-Regular';
+    src: url('../fonts/Orborn-Regular.svg#Orborn-Regular') format('svg'),
+         url('../fonts/Orborn-Regular.ttf') format('truetype'),
+         url('../fonts/Orborn-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Orborn';
+    src: url('../fonts/Orborn.eot');
+    src: url('../fonts/Orborn.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Orborn.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  
+    
