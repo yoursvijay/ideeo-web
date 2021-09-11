@@ -11,6 +11,10 @@
     scroll-behavior: smooth;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 a, a:visited, a:hover{
     text-decoration: none;
 }
@@ -579,10 +583,9 @@ body {
 }
 .work-sec .row-1 .heading-content{
     position: absolute;
-    left: auto;
-    right: auto;
+    left: 0;
+    right: 0;
     z-index: 999;
-    width: 100%;
 }
 .work-sec .row-2{
     height: 100%;
