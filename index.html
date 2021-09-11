@@ -32,21 +32,20 @@
 <div class="main">
 
 <!-- menu toggle -->
-<input type="checkbox" id="ham-menu">
-<label for="ham-menu">
-    <div class="hide-des">
-        <span class="menu-line"></span>
-        <span class="menu-line"></span>
-        <span class="menu-line"></span>
-        <img class="gooey" src="./assets/img/gooey.png" alt="gooey">
-    </div>
-</label>
+<div class="sidebar-fixed">
+    <a class="toggle-menu" href="javascript:void(0)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+</div>
+
 <!-- ./menu toggle end-->
 
 
 
 <!-- Header -->
-<div class="container-fluid top-header">
+<div class="container-fluid top-header" id="mainNav">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <header class="header">
@@ -64,7 +63,7 @@
 
         
 <!-- Hero Banner -->
-    <div class="container">
+    <div class="container hero-banner">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="banner">
@@ -88,7 +87,7 @@
 <!-- ./Hero Banner end-->
 
 <!-- Our Offerings -->
-    <div class="container offerings-sec">
+    <div class="container offerings-sec" id="Products">
         <div class="row">
             <div class="col-lg-12">
                 <div class="heading-content">
@@ -98,15 +97,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
-                <div class="nav flex-column nav-pills me-3 vtabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="nav flex-column nav-pills vtabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link active" id="v-pills-discover-tab" data-bs-toggle="pill" data-bs-target="#v-pills-discover" type="button" role="tab" aria-controls="v-pills-discover" aria-selected="true">
                         <div class="tab-label">
                             <ul>
                                 <li>
                                     <span class="h-line"></span>
-                                </li>
-                                <li>
                                     <span class="count">01</span>
                                 </li>
                                 <li>
@@ -123,8 +120,6 @@
                             <ul>
                                 <li>
                                     <span class="h-line"></span>
-                                </li>
-                                <li>
                                     <span class="count">02</span>
                                 </li>
                                 <li>
@@ -141,8 +136,6 @@
                             <ul>
                                 <li>
                                     <span class="h-line"></span>
-                                </li>
-                                <li>
                                     <span class="count">03</span>
                                 </li>
                                 <li>
@@ -159,8 +152,6 @@
                             <ul>
                                 <li>
                                     <span class="h-line"></span>
-                                </li>
-                                <li>
                                     <span class="count">04</span>
                                 </li>
                                 <li>
@@ -177,8 +168,6 @@
                             <ul>
                                 <li>
                                     <span class="h-line"></span>
-                                </li>
-                                <li>
                                     <span class="count">05</span>
                                 </li>
                                 <li>
@@ -195,8 +184,6 @@
                             <ul>
                                 <li>
                                     <span class="h-line"></span>
-                                </li>
-                                <li>
                                     <span class="count">06</span>
                                 </li>
                                 <li>
@@ -210,116 +197,227 @@
                     </button>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="tab-content vtab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-discover" role="tabpanel" aria-labelledby="v-pills-discover-tab">
-                        <div class="card-body pt-lg-0">
-                            <div class="content">
-                                <p>
-                                    Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
-                                </p>
-                                <ul>
-                                    <li>User Research</li>
-                                    <li>Competitor Analysis</li>
-                                    <li>Quantitative research</li>
-                                    <li>Usability Testing</li>
-                                    <li>Heuristic Evaluation</li>
-                                </ul>
+                        
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <ul>
+                                  <li><span>01</span> <div><img src="./assets/img/icons/discover-icon.svg" alt="discover-icon"></div> Discover</li>
+                              </ul>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card-body pt-lg-0">
+                                    <div class="content">
+                                        <p>
+                                            Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
+                                        </p>
+                                        <ul>
+                                            <li>User Research</li>
+                                            <li>Competitor Analysis</li>
+                                            <li>Quantitative research</li>
+                                            <li>Usability Testing</li>
+                                            <li>Heuristic Evaluation</li>
+                                        </ul>
+                                    </div>
+                                    <img class="content-img" src="./assets/img/discover-img.svg" alt="discover">
+                                </div>
+                                <img class="shadow-text" src="./assets/img/discover-text.svg" alt="discover-text">
                             </div>
-                            <img class="content-img" src="./assets/img/discover-img.svg" alt="discover">
-                        </div>
-                        <img class="shadow-text" src="./assets/img/discover-text.svg" alt="discover-text">
+                          </div>
                     </div>
+
+
                     <div class="tab-pane fade" id="v-pills-design" role="tabpanel" aria-labelledby="v-pills-design-tab">
-                        <div class="card-body pt-lg-0">
-                            <div class="content">
-                                <p>
-                                    Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
-                                </p>
-                                <ul>
-                                    <li>User Research</li>
-                                    <li>Competitor Analysis</li>
-                                    <li>Quantitative research</li>
-                                    <li>Usability Testing</li>
-                                    <li>Heuristic Evaluation</li>
-                                </ul>
+
+
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <ul>
+                                  <li><span>02</span> <div><img src="./assets/img/icons/discover-icon.svg" alt="discover-icon"></div> Design</li>
+                              </ul>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card-body pt-lg-0">
+                                    <div class="content">
+                                        <p>
+                                            Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
+                                        </p>
+                                        <ul>
+                                            <li>User Research</li>
+                                            <li>Competitor Analysis</li>
+                                            <li>Quantitative research</li>
+                                            <li>Usability Testing</li>
+                                            <li>Heuristic Evaluation</li>
+                                        </ul>
+                                    </div>
+                                    <img class="content-img" src="./assets/img/design-img.svg" alt="design">
+                                </div>
+                                <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
                             </div>
-                            <img class="content-img" src="./assets/img/design-img.svg" alt="design">
-                        </div>
-                        <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
+                          </div>
+
+
                     </div>
-                    <div class="tab-pane fade" id="v-pills-develop" role="tabpanel" aria-labelledby="v-pills-develop-tab">
-                        <div class="card-body pt-lg-0">
-                            <div class="content">
-                                <p>
-                                    Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
-                                </p>
-                                <ul>
-                                    <li>User Research</li>
-                                    <li>Competitor Analysis</li>
-                                    <li>Quantitative research</li>
-                                    <li>Usability Testing</li>
-                                    <li>Heuristic Evaluation</li>
-                                </ul>
+
+
+
+                    <div class="tab-pane fade" id="v-pills-develop" role="tabpanel" aria-labelledby="v-pills-develop-tabFour">
+
+                         <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <ul>
+                                  <li><span>03</span> <div><img src="./assets/img/icons/discover-icon.svg" alt="discover-icon"></div> Develop</li>
+                              </ul>
+                            </button>
+                          </h2>
+
+
+                          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card-body pt-lg-0">
+                                    <div class="content">
+                                        <p>
+                                            Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
+                                        </p>
+                                        <ul>
+                                            <li>User Research</li>
+                                            <li>Competitor Analysis</li>
+                                            <li>Quantitative research</li>
+                                            <li>Usability Testing</li>
+                                            <li>Heuristic Evaluation</li>
+                                        </ul>
+                                    </div>
+                                    <img class="content-img" src="./assets/img/design-img.svg" alt="design">
+                                </div>
+                                <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
                             </div>
-                            <img class="content-img" src="./assets/img/design-img.svg" alt="design">
-                        </div>
-                        <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
+                          </div>
+
+
+
                     </div>
+
+
+
+
+
+
+
                     <div class="tab-pane fade" id="v-pills-animation" role="tabpanel" aria-labelledby="v-pills-animation-tab">
-                        <div class="card-body pt-lg-0">
-                            <div class="content">
-                                <p>
-                                    Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
-                                </p>
-                                <ul>
-                                    <li>User Research</li>
-                                    <li>Competitor Analysis</li>
-                                    <li>Quantitative research</li>
-                                    <li>Usability Testing</li>
-                                    <li>Heuristic Evaluation</li>
-                                </ul>
+
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <ul>
+                                  <li><span>04</span> <div><img src="./assets/img/icons/discover-icon.svg" alt="discover-icon"></div> Animation</li>
+                              </ul>
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card-body pt-lg-0">
+                                    <div class="content">
+                                        <p>
+                                            Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
+                                        </p>
+                                        <ul>
+                                            <li>User Research</li>
+                                            <li>Competitor Analysis</li>
+                                            <li>Quantitative research</li>
+                                            <li>Usability Testing</li>
+                                            <li>Heuristic Evaluation</li>
+                                        </ul>
+                                    </div>
+                                    <img class="content-img" src="./assets/img/design-img.svg" alt="design">
+                                </div>
+                                <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
                             </div>
-                            <img class="content-img" src="./assets/img/design-img.svg" alt="design">
-                        </div>
-                        <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
+                          </div>
+
+
                     </div>
+
+
+
+
+
                     <div class="tab-pane fade" id="v-pills-ar-vr" role="tabpanel" aria-labelledby="v-pills-ar-vr-tab">
-                        <div class="card-body pt-lg-0">
-                            <div class="content">
-                                <p>
-                                    Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
-                                </p>
-                                <ul>
-                                    <li>User Research</li>
-                                    <li>Competitor Analysis</li>
-                                    <li>Quantitative research</li>
-                                    <li>Usability Testing</li>
-                                    <li>Heuristic Evaluation</li>
-                                </ul>
+
+
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <ul>
+                                  <li><span>05</span> <div><img src="./assets/img/icons/discover-icon.svg" alt="discover-icon"></div> AR / VR</li>
+                              </ul>
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card-body pt-lg-0">
+                                    <div class="content">
+                                        <p>
+                                            Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
+                                        </p>
+                                        <ul>
+                                            <li>User Research</li>
+                                            <li>Competitor Analysis</li>
+                                            <li>Quantitative research</li>
+                                            <li>Usability Testing</li>
+                                            <li>Heuristic Evaluation</li>
+                                        </ul>
+                                    </div>
+                                    <img class="content-img" src="./assets/img/design-img.svg" alt="design">
+                                </div>
+                                <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
                             </div>
-                            <img class="content-img" src="./assets/img/design-img.svg" alt="design">
-                        </div>
-                        <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
+                          </div>
+
+ 
                     </div>
+
+
+
                     <div class="tab-pane fade" id="v-pills-iot" role="tabpanel" aria-labelledby="v-pills-iot-tab">
-                        <div class="card-body pt-lg-0">
-                            <div class="content">
-                                <p>
-                                    Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
-                                </p>
-                                <ul>
-                                    <li>User Research</li>
-                                    <li>Competitor Analysis</li>
-                                    <li>Quantitative research</li>
-                                    <li>Usability Testing</li>
-                                    <li>Heuristic Evaluation</li>
-                                </ul>
+
+
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <ul>
+                                  <li><span>06</span> <div><img src="./assets/img/icons/discover-icon.svg" alt="discover-icon"></div> IOT</li>
+                              </ul>
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card-body pt-lg-0">
+                                    <div class="content">
+                                        <p>
+                                            Discover serves many purposes throughout the design process. It helps us identify and prove or disprove our assumptions, find commonalities across our target audience members, and recognize their needs, goals, and mental models. Overall, research informs our work, improves our understanding, and make our work better.
+                                        </p>
+                                        <ul>
+                                            <li>User Research</li>
+                                            <li>Competitor Analysis</li>
+                                            <li>Quantitative research</li>
+                                            <li>Usability Testing</li>
+                                            <li>Heuristic Evaluation</li>
+                                        </ul>
+                                    </div>
+                                    <img class="content-img" src="./assets/img/design-img.svg" alt="design">
+                                </div>
+                                <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
                             </div>
-                            <img class="content-img" src="./assets/img/design-img.svg" alt="design">
-                        </div>
-                        <img class="shadow-text" src="./assets/img/design-text.svg" alt="design-text">
+                          </div>
+
+
                     </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -328,7 +426,7 @@
 
 
 <!-- Work Sec -->
-    <div class="container work-sec">
+    <div class="container-fluid work-sec" id="Work">
         <div class="row row-1">
             <div class="col-lg-12">  
                 <div class="heading-content">
@@ -337,8 +435,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-5">
+        <div class="row row-2">
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 work-sec-lt">
                 <div class="slider2">
                     <div>
                         <div class="work-slider-text">
@@ -362,17 +460,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="progress-counter">
-                    <ul>
-                        <li><span class="counter-info"></span></li>
-                        <li>
-                            <div class="progress-line" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                        </li>
-                        <li><span class="total-count"></span></li>
+                <div class="work-progress-status">
+                    <div class="progress-counter">
+                        <ul>
+                            <li><span class="counter-info"></span></li>
+                            <li>
+                                <div class="progress-line" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                            </li>
+                            <li><span class="total-count"></span></li>
+                        </ul>
+                    </div>
+                    <ul class="view-detail">
+                        <li><a href="#">VIEW DETAILS <img src="./assets/img/icons/right-arrow.png" alt="arrow"></a> </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-7 work-sec-rt">
+            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 work-sec-rt">
                     <div class="slider project-carousel">
                         <div>
                             <div class="image">
@@ -419,8 +522,7 @@
 
 
 <!-- Our Clients -->
-        <div class="clients-sec">
-        <div class="container">
+        <div class="container clients-sec" id="Clients">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="heading-content">
@@ -517,15 +619,14 @@
                 </div>
             </div>
             <img class="frame-two" src="./assets/img/Frame.svg" alt="frame">
+            <img class="frame-one" src="./assets/img/Frame.svg" alt="frame">
         </div>
-        <img class="frame-one" src="./assets/img/Frame.svg" alt="frame">
-    </div>
 <!-- ./Our Clients end-->
 
 
 
 <!-- Testimonial sec -->
-    <div class="container-fluid tesimonial-sec">
+    <div class="container tesimonial-sec">
         <div class="row">
             <div class="col-lg-12">
                 <div class="heading-content">
@@ -536,7 +637,8 @@
         </div>
             <div class="testi-container">
                   <div class="testi-box">
-                    <div class="testi-img-card">
+                      <div class="testi-img-card">
+                        <img class="blockquote-shape" src="./assets/img/blockquotes.svg" alt="">
                         <div class="testi-img-slider">
                             <div>
                                 <img src="./assets/img/testimonials/image.png" alt="">
@@ -555,7 +657,7 @@
                                 <div>
                                     <div class="t-profile">
                                         <img src="./assets/img/profile.png" alt="">
-                                        <h5>Sreeshar reddy
+                                        <h5>Sreedhar reddy
                                             <span>Product manager @PUMA</span>
                                         </h5>
                                     </div>
@@ -599,8 +701,8 @@
                                         Lorem Ipsum has been the industry's standard.
                                     </p>
                                 </div>
-                            </div>
 
+                            </div>
                             <div class="arrow-nav testi-nav">
                                 <button type="button" class="testi-prev"><i class='bx bx-left-arrow-alt'></i></button>
                                 <button type="button" class="testi-next"><i class='bx bx-right-arrow-alt'></i></button>
@@ -617,7 +719,39 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="testimonial-brands">
+                    <div>
+                        <i class='bx bxs-down-arrow'></i>
+                        <img src="./assets/img/testimonials/lg.png" alt="lg">
+                    </div>
+                    <div>
+                        <i class='bx bxs-down-arrow'></i>
+                        <img src="./assets/img/testimonials/add.png" alt="lg">
+                    </div>
+                    <div>
+                        <i class='bx bxs-down-arrow'></i>
+                        <img src="./assets/img/testimonials/ford.png" alt="lg">
+                    </div>
+                    <div>
+                        <i class='bx bxs-down-arrow'></i>
+                        <img src="./assets/img/testimonials/lg.png" alt="lg">
+                    </div>
+                    <div>
+                        <i class='bx bxs-down-arrow'></i>
+                        <img src="./assets/img/testimonials/add.png" alt="lg">
+                    </div>
+                    <div>
+                        <i class='bx bxs-down-arrow'></i>
+                        <img src="./assets/img/testimonials/ford.png" alt="lg">
+                    </div>
+                </div>
+               
+
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+
+            </div>
           </div>
       </div>
 <!-- ./Testimonial sec end-->
@@ -626,7 +760,102 @@
 
 
 <!-- Awards sec-->
-      <div class="awards-sec">
+
+<div class="container award-section" id="Awards">
+    <img class="awards-dot-frame-two" src="./assets/img/Frame.svg" alt="frame">
+    <img class="awards-dot-frame-one" src="./assets/img/Frame.svg" alt="frame">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="heading-content">
+                <h2>awards & <br/>recognition</h2>
+                <span>Ideeo is a leading enterprise mobile app development company since 2016, helping <br/>customers solve complex business problems successfully.</span>
+            </div>
+        </div>
+    </div>
+    <div class="row h-auto">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 award-section-left mb-5">
+            <div>
+                <img class="img-fluid award-mask" src="./assets/img/award-mask.png" alt="">
+                <img class="img-fluid" src="./assets/img/award-one.png" alt="award">
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 award-section-right">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="award-box">
+                        <div>
+                            <h5>India <br/>500 Startup<br/> Awards</h5>
+                       </div>
+                       <p>Top Branding apps
+                           <span>2018</span>
+                       </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="award-box">
+                        <div>
+                            <h5>India <br/>500 Startup<br/> Awards</h5>
+                       </div>
+                       <p>Top Branding apps
+                           <span>2018</span>
+                       </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="award-box">
+                        <div>
+                            <h5>India <br/>500 Startup<br/> Awards</h5>
+                       </div>
+                       <p>Top Branding apps
+                           <span>2018</span>
+                       </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="award-box">
+                        <div>
+                            <h5>India <br/>500 Startup<br/> Awards</h5>
+                       </div>
+                       <p>Top Branding apps
+                           <span>2018</span>
+                       </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="award-box">
+                        <div>
+                            <h5>India <br/>500 Startup<br/> Awards</h5>
+                       </div>
+                       <p>Top Branding apps
+                           <span>2018</span>
+                       </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="award-box">
+                        <div>
+                            <h5>India <br/>500 Startup<br/> Awards</h5>
+                       </div>
+                       <p>Top Branding apps
+                           <span>2018</span>
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+      <div class="awards-sec d-none">
       <img class="awards-dot-frame-two" src="./assets/img/Frame.svg" alt="frame">
       <div class="container">
         <div class="row">
@@ -739,8 +968,8 @@
 
 
 <!-- Blogs sec-->
-<div class="blog-sec">
-<div class="container">
+
+<div class="container-fluid blog-sec" id="Blogs">
     <div class="row">
         <div class="col">
             <div class="heading-content blog-heading">
@@ -750,7 +979,7 @@
         </div>
     </div>
     <div class="row grid-blog">
-        <div class="col">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>01</h3>
@@ -764,7 +993,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>02</h3>
@@ -778,7 +1007,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>03</h3>
@@ -793,7 +1022,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>04</h3>
@@ -808,7 +1037,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>05</h3>
@@ -823,13 +1052,28 @@
                 </div>
             </div>
         </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+            <div class="card blog-card">
+                <div class="card-header">
+                    <h3>06</h3>
+                </div>
+                <div class="card-body">
+                    <img src="./assets/img/blog-img5.png" alt="">
+                    <p>COPPER MOBILE FEATURED AMONG 
+                        THE TOP ANDROID APP D...</p>
+                </div>
+                <div class="card-footer">
+                    <span>APR 1, 2021</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-</div>
+
 <!-- ./Blogs sec end-->
 
 
-<footer>
+<footer id="Contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -866,17 +1110,17 @@
 
 <!-- Sidebar menu -->
 
-<div class="full-page-green"></div>
-<div class="ham-menu">
+<div class="backdrop"></div>
+<div class="menu-drawer">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6">
                     <ul class="cap-ul">
-                        <li><a href="#"><span>about</span></a></li>
-                        <li><a href="#"><span>services</span></a></li>
-                        <li><a href="#"><span>process</span></a></li>
-                        <li><a href="#"><span>work</span></a></li>
-                        <li><a href="#"><span>products</span></a></li>
+                        <li><a href="#About"><span>about</span></a></li>
+                        <li><a href="#Services"><span>services</span></a></li>
+                        <li><a href="#Process"><span>process</span></a></li>
+                        <li><a href="#Work"><span>work</span></a></li>
+                        <li><a href="#Products"><span>products</span></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 me-auto text-center">
@@ -886,11 +1130,11 @@
             <div class="row row-two">
                 <div class="col-lg-6">
                     <ul class="sm-ul">
-                        <li><a href="#">CLIENTS</a></li>
-                        <li><a href="#">AWARDS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CAREERS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#Clients">CLIENTS</a></li>
+                        <li><a href="#Awards">AWARDS</a></li>
+                        <li><a href="#Blogs">BLOG</a></li>
+                        <li><a href="#Careers">CAREERS</a></li>
+                        <li><a href="#Contact">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
@@ -1006,10 +1250,53 @@
     // centerPadding: '40px',
     responsive: [
     {
-      breakpoint: 478,
+      breakpoint: 1367,
       settings: {
         slidesPerRow: 1,
-        rows: 1,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesPerRow: 1,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesPerRow: 1,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesPerRow: 1,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesPerRow: 1,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
       }
     }
   ]
@@ -1018,19 +1305,22 @@
 </script>
 
 <script>
-    $(document).ready(function() {
-    $('.testimonials').slick({
-        // arrows: true,
-        dots: false,
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '.testi-prev',
-        nextArrow: '.testi-next',
-     });
-    });
+    // $(document).ready(function() {
+    //     $('.testimonials').slick({
+    //     arrows: false,
+    //     dots: false,
+    //     infinite: false,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     prevArrow: '.testi-prev',
+    //     nextArrow: '.testi-next',
+    //     asNavFor: '.testimonials , .testimonial-brand',
+    //  });
+    // });
+
+
+    
 </script>
 <script>
     $(document).ready(function() {
@@ -1112,7 +1402,7 @@
             prevArrow: $(".testi-prev"),
             nextArrow: $(".testi-next"),
             focusOnSelect: true,
-            asNavFor: '.tslider, .testi-img-slider',
+            asNavFor: '.tslider, .testi-img-slider, .testimonial-brands',
         }); 
         
         $('.testi-img-slider').slick({
@@ -1123,8 +1413,55 @@
             prevArrow: $(".testi-prev"),
             nextArrow: $(".testi-next"),
             focusOnSelect: true,
-            asNavFor: '.tslider, .testi-img-slider',
-            });
+            asNavFor: '.tslider, .testi-img-slider, .testimonial-brands',
+        });
+
+        $('.testimonial-brands').slick({
+            // fade: true,
+            cssEase: 'linear',
+            loop: Infinity,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            speed: 400,
+            prevArrow: $(".testi-prev"),
+            nextArrow: $(".testi-next"),
+            focusOnSelect: true,
+            asNavFor: '.tslider, .testi-img-slider, .testimonial-brands',
+
+
+            responsive: [
+                {
+                breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                }
+            ]
+
+
+
+        });
 
         });
             var $status3 = $('.counter-info2');

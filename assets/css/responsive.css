@@ -7,4 +7,448 @@
 }
 
 
+@media (min-width: 1200px){
+    .slider2{
+        margin-left: 185px;
+    }
+    .work-progress-status{
+        margin-left: 185px;
+    }
+    .testi-content{
+        max-width: 900px;
+    }
+    .testi-content .card-body p{
+        width: 90%;
+    }
+    .blog-sec .grid-blog{
+        padding-left: 80px;
+    }
+}
+
+@media (min-width: 1700px) and (max-width:1920px){
+    .testi-content{
+        max-width: 970px;
+    }
+}   
+
+
+@media (max-width: 1500px){
+    .project-carousel div.image{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1366.98px) {
+    .banner .banner-content h1{
+        font-size: 120px;
+    }
+    .banner .hero-banner-imgs img{
+        max-width: 40%;
+    }
+    .footer-inner{
+        margin-left: 150px;
+    }
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:575.98px){
+    .top-header{
+        padding: 30px 25px;
+    }
+    .banner .banner-content h1{
+        font-size: 60px;
+    }
+    .banner .hero-banner-imgs .img-lt{
+        top: 12%;
+        left: 10%;
+        max-width: 70%;
+    }
+    .banner .hero-banner-imgs .img-rt{
+        bottom: 0;
+        max-width: 100%;
+    }
+    .heading-content h2{
+        font-size: 42px;
+    }
+    .heading-content span{
+        font-size: 14px;
+    }
+    .offerings-sec{
+        height: auto;
+    }
+    .work-sec{
+        height: auto;
+    }
+    .work-sec .row-1 .heading-content{
+        position: initial;
+    }
+    .work-slider-text{
+        margin-top: 0;
+    }
+    .progress-counter,.progress-counter2 ul{
+        display: none;
+    }
+    .project-carousel div.image{
+        display: block;
+    }
+    .project-carousel div.image img{
+        margin: 0 auto;
+    }
+    .sliderBottom .slider3{
+        padding: 16px 16px 0;
+        height: 80px;
+    }
+    .sliderBottom p{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .sliderBottom .sliderBtns{
+        position: initial;
+        justify-content: center;
+        background-color: #0062BC;
+    }
+    .view-detail{
+        position: initial;
+        padding-left: 0;
+    }
+
+    .clients-slider{
+        margin: 0;
+    }
+
+
+    .tesimonial-sec{
+        height: auto;
+    }
+    .testi-box{
+        display: block !important;
+    }
+    .testi-img-card{
+        left: auto;
+        margin: 0 auto;
+    }
+    .testi-content .card-body{
+        max-height: 100%;
+        padding: 20px 16px;
+    }
+    .testi-content .card-body p{
+        width: 100%;
+    }
+    .testi-nav{
+        margin-top: 0;
+    }
+
+    .award-section{
+        height: auto;
+    }
+    .award-section-left div{
+        margin-top: 0;
+    }
+    .blog-sec{
+        height: auto;
+    }
+    .blog-sec .container, .blog-sec .container .grid-blog{
+        height: auto;
+    }
+    .blog-heading{
+        position: initial;
+        margin-top: 110px;
+    }
+    .blog-card{
+        padding-top: 30px;
+    }
+    .blog-card p{
+        margin: 10px 0;
+    }
+    .blog-card .card-body{
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+
+}
+
+
+
+@media (max-width: 575.98px) { 
+
+ }
+
+
+@media only screen and (min-width:576px) and (max-width: 767.98px) { 
+
+    .banner .banner-content h1{
+        font-size: 60px;
+    }
+ }
+
+
+ @media only screen and (min-width:768px) and (max-width: 991.98px) {
+         
+    .hero-banner{
+        position: relative;
+    }
+    .banner{
+        position: initial;
+    }
+    .banner .banner-content h1{
+        font-size: 92px;
+    }
+    .banner .banner-content span.sm-caption{
+        font-size: 18px;
+    }
+    .banner .hero-banner-imgs .img-lt{
+        left: 0;
+        top: 54%;
+        max-width: 40%;
+    }
+    .banner .hero-banner-imgs .img-rt{
+        right: 0;
+        top: 56%;
+        max-width: 40%;
+    }
+
+    .heading-content h2{
+        font-size: 48px;
+    }
+
+    .offerings-sec{
+        height: auto;
+    }
+
+    .vtabs .nav-link.active ul li h4,
+    .tab-label ul li span.count{
+        font-size: 22px;
+    }
+
+
+ }
+
+ 
+ @media (max-width: 767.98px) { 
+    .vtab-content .accordion-header{
+        display: block;
+    }
+    .vtab-content  .tab-pane{
+        display:block;
+        opacity: 1;      
+     } 
+     .vtabs{
+         display: none;
+     }
+ }
+
+
+ @media (max-width: 768px) { 
+    .top-header{
+        padding: 30px;
+    }
+    .work-sec{
+        height: auto;
+    }
+    .work-sec .row-1 .heading-content{
+        position: initial;
+    }
+    .work-slider-text{
+        margin-top: 0;
+    }
+    .project-carousel div.image img:first-child{
+        display: none;
+    }
+    .sliderBottom{
+        position: initial;
+        right: 0;
+    }
+    .sliderBottom p{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .sliderBottom .slider3{
+        padding: 16px 16px 0;
+        height: auto;
+    }
+    .sliderBottom .sliderBtns{
+        position: initial;
+        background-color: #0062BC;
+        justify-content: center;
+    }
+
+    .vtab-content .card-body{
+        display: block;
+    }
+
+    .tesimonial-sec{
+        height: auto;
+    }
+    .testi-box{
+        display: block !important;
+    }
+
+    .testi-content .card-body{
+        padding: 40px;
+        max-height: auto;
+    }
+    .testi-content .card-body p{
+        width: 100%;
+    }
+    .progress-counter2{
+        display: none;
+    }
+    
+    .testi-nav{
+        margin-top: 0;
+    }
+
+
+    .award-section{
+        height: auto;
+    }
+    .award-section-left div{
+        margin-top: 0;
+    }
+    .award-section-left div .award-mask {
+        position: absolute;
+        left: 0;
+        max-width: 100%;
+    }
+
+    .blog-sec{
+        height: auto;
+    }
+    .blog-sec .container, .blog-sec .container .grid-blog{
+        height: auto;
+    }
+    .blog-heading{
+        position: initial;
+        margin-top: 110px;
+    }
+    .blog-card{
+        padding-top: 30px;
+    }
+    .blog-card p{
+        margin: 10px 0;
+    }
+    .blog-card .card-body{
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width: 1024px) { 
+    .sidebar-fixed{
+        display: none;
+    }
+    .testi-img-card{
+        display: none;
+    }
+    .testi-box{
+        display: block !important;
+    }
+    .award-section{
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width:991px) and (max-width: 1024px) {
+    .top-header{
+        padding: 30px 60px;
+    }
+    .hero-banner{
+        position: relative;
+    }
+    .banner{
+        position: initial;
+    }
+    .banner .banner-content h1{
+        font-size: 100px;
+    }
+    .banner .hero-banner-imgs img{
+        max-width: 46%;
+    }
+    .banner .hero-banner-imgs .img-lt{
+        left: 0;
+    }
+    .banner .hero-banner-imgs .img-rt{
+        right: 0;
+    }
+
+    .work-sec{
+        height: auto;
+    }
+    .work-sec-lt{
+        display: initial;
+    }
+    .work-sec .row-1 .heading-content{
+        position: initial;
+    }
+    .work-slider-text{
+        margin-top: 0;
+    }
+
+    .project-carousel div.image{
+        display: block;
+    }
+    .project-carousel div.image img{
+        margin: 0 auto;
+    }
+    .project-carousel div.image img:first-child{
+        display: none;
+    }
+    .sliderBottom .slider3{
+        padding: 16px 16px 0;
+        height: 80px;
+    }
+    .sliderBottom p{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .sliderBottom .sliderBtns{
+        position: initial;
+        justify-content: center;
+        background-color: #0062BC;
+    }
+    .view-detail{
+        position: initial;
+        padding-left: 0;
+    }
+
+    .award-section-right .award-box{
+        width: 190px;
+    }
+    .award-box h5{
+        font-size: 18px;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width:1367px) and (max-width: 1440px) {
+    .banner .hero-banner-imgs .img-rt{
+        bottom: 0;
+        right: 0;
+    }
+    .view-detail{
+        bottom: 0;
+    }
+    .blog-sec{
+        padding-left: 90px;
+    }
+    .footer-inner{
+        padding-left: 190px;
+    }
+}
+
+
+
+@media (max-width: 1199.98px) {
+    .clients-sec{
+        height: auto;
+    }
+  }
+
 

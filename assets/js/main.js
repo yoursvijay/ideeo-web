@@ -44,3 +44,19 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 });
+
+
+
+$(function() {
+    $(".toggle-menu").click(function() {
+      $(this).toggleClass("active");
+      $('.menu-drawer').toggleClass("open");
+      $('.backdrop').toggleClass("remove-backdrop");
+    });
+    $(".menu-drawer ul li a").click(function() {
+      $('.toggle-menu').toggleClass("active");
+      $('.menu-drawer').toggleClass("open");
+      $('.backdrop').toggleClass("remove-backdrop");
+
+    });
+  });
