@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +10,6 @@
     -o-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
-}
-
-html{
-    overflow-x: hidden;
 }
 
 a, a:visited, a:hover{
@@ -106,12 +103,14 @@ body {
     background: #000000;
     width: 24px;
     left: 0px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
   }
   
   .toggle-menu span:nth-child(1) {
-    top: 0;
+    top: 8px;
   }
   
   .toggle-menu span:nth-child(2) {
@@ -120,14 +119,14 @@ body {
   }
   
   .toggle-menu span:nth-child(3) {
-    top: 10px;
+    top: 16px;
     width: 16px;
     left: 10px;
   }
   
   .toggle-menu.active span:nth-child(1) {
-    top: 0;
-    left: 5px;
+    top: 12px;
+    left: 2px;
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
   }
@@ -137,9 +136,9 @@ body {
   }
   
   .toggle-menu.active span:nth-child(3) {
-    top: 0;
+    top: 12px;
     width: 24px;
-    left: 5px;
+    left: 2px;
     -webkit-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg);
   }
@@ -314,6 +313,7 @@ body {
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0.1px;
+    color: #191E25;
 } 
 .banner .banner-content span.sm-caption {
     display: block;
@@ -373,7 +373,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 60px;
     height: 112px;
 }
@@ -382,11 +382,16 @@ body {
     font-weight: 400;
     color: #191E25;
     text-transform: uppercase;
-    transform: rotate(-90deg);
+    position: inherit;
+    top: 0;
+    transform: rotate(
+    270deg);
 }
 .scroll-down img {
     display: block;
     height: 60px;
+    position: inherit;
+    bottom: 0;
 }
 
 
@@ -404,6 +409,7 @@ body {
     font-size: 60px;
     font-weight: 400;
     line-height: 0.8;
+    color: #191E25;
 }
 .heading-content span{
     font-weight: 400;
@@ -676,7 +682,7 @@ body {
 }
 .work-sec-rt{
     position: relative;
-    z-index: 9999;
+    z-index: 99;
 }
 
 
@@ -1200,6 +1206,7 @@ body {
     width: 220px;
     margin: 0 auto;
     padding-top: 192px;
+    background-color: transparent;
 }
 .blog-card h3{
     font-style: normal;
@@ -1257,7 +1264,7 @@ footer::after{
     right: 0;
     bottom: 0;
     clear: both;
-    z-index: -1;
+    z-index: 1;
 }
 .footer-links{
     border-left:2px solid #ffffff;
@@ -1306,3 +1313,6 @@ footer .social-ul li ul li a:hover{
     color: #ffffff;
 }
 /* ---./Footer sec--- */
+
+
+

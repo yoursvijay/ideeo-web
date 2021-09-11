@@ -112,6 +112,7 @@
     .view-detail{
         position: initial;
         padding-left: 0;
+        margin-bottom: 16px;
     }
 
     .clients-slider{
@@ -167,13 +168,15 @@
         padding-bottom: 0;
     }
 
+    .frame-two {
+        left: 0;
+        z-index: -1;
+    }
+    .award-section-left div .award-mask{
+        max-width: 30%;
+    }
+
 }
-
-
-
-@media (max-width: 575.98px) { 
-
- }
 
 
 @media only screen and (min-width:576px) and (max-width: 767.98px) { 
@@ -222,11 +225,10 @@
         font-size: 22px;
     }
 
-
  }
 
  
- @media (max-width: 767.98px) { 
+ @media (max-width: 767.98px){ 
     .vtab-content .accordion-header{
         display: block;
     }
@@ -237,6 +239,10 @@
      .vtabs{
          display: none;
      }
+     .heading-content{
+         margin-bottom: 50px;
+     }
+
  }
 
 
@@ -333,6 +339,10 @@
         padding-top: 16px;
         padding-bottom: 0;
     }
+    .footer-inner{
+        margin-top: 80px;
+    }
+
 }
 
 
@@ -349,6 +359,15 @@
     .award-section{
         height: auto;
     }
+    .offerings-sec{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        overflow: hidden;
+    }
+
+
 }
 
 
@@ -421,7 +440,9 @@
     .award-box h5{
         font-size: 18px;
     }
-
+    .footer-inner{
+        margin-top: 130px;
+    }
 
 
 }
