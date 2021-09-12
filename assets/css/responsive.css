@@ -76,12 +76,7 @@
     .heading-content span{
         font-size: 14px;
     }
-    .offerings-sec{
-        height: auto;
-    }
-    .work-sec{
-        height: auto;
-    }
+
     .work-sec .row-1 .heading-content{
         position: initial;
     }
@@ -121,9 +116,6 @@
     }
 
 
-    .tesimonial-sec{
-        height: auto;
-    }
     .testi-box{
         display: block !important;
     }
@@ -142,18 +134,11 @@
         margin-top: 0;
     }
 
-    .award-section{
-        height: auto;
-    }
+
     .award-section-left div{
         margin-top: 0;
     }
-    .blog-sec{
-        height: auto;
-    }
-    .blog-sec .container, .blog-sec .container .grid-blog{
-        height: auto;
-    }
+
     .blog-heading{
         position: initial;
         margin-top: 110px;
@@ -235,9 +220,6 @@
         font-size: 48px;
     }
 
-    .offerings-sec{
-        height: auto;
-    }
 
     .vtabs .nav-link.active ul li h4,
     .tab-label ul li span.count{
@@ -278,9 +260,7 @@
     .top-header{
         padding: 30px;
     }
-    .work-sec{
-        height: auto;
-    }
+
     .work-sec .row-1 .heading-content{
         position: initial;
     }
@@ -312,9 +292,6 @@
         display: block;
     }
 
-    .tesimonial-sec{
-        height: auto;
-    }
     .testi-box{
         display: block !important;
     }
@@ -335,9 +312,6 @@
     }
 
 
-    .award-section{
-        height: auto;
-    }
     .award-section-left div{
         margin-top: 0;
     }
@@ -347,12 +321,6 @@
         max-width: 100%;
     }
 
-    .blog-sec{
-        height: auto;
-    }
-    .blog-sec .container, .blog-sec .container .grid-blog{
-        height: auto;
-    }
     .blog-heading{
         position: initial;
         margin-top: 110px;
@@ -406,12 +374,7 @@
     .testi-box{
         display: block !important;
     }
-    .award-section{
-        height: auto;
-    }
-    .offerings-sec{
-        height: auto;
-    }
+
     footer{
         height: auto;
         overflow: hidden;
@@ -461,9 +424,6 @@
         right: 0;
     }
 
-    .work-sec{
-        height: auto;
-    }
     .work-sec-lt{
         display: initial;
     }
@@ -535,6 +495,12 @@
 
 @media (max-width: 1199.98px) {
     .clients-sec{
+        height: auto;
+    }
+    .blog-sec, .tesimonial-sec, .award-section , .offerings-sec , .work-sec{
+        height: auto;
+    }
+    .blog-sec .container, .blog-sec .container .grid-blog{
         height: auto;
     }
   }
