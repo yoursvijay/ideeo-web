@@ -1,4 +1,39 @@
 
+@media (min-width: 1600px){
+    .banner .banner-content h1{
+        font-size: 170px;
+    }
+    .heading-content h2{
+        font-size: 70px;
+    }
+    .heading-content span{
+        font-size: 20px;
+    }
+    .vtab-content .card-body .content p, .vtab-content .card-body .content ul li{
+        font-size: 20px;
+    }
+    .tab-label ul li h4, .tab-label ul li span.count, .vtabs .nav-link.active ul li h4, footer .social-ul li ul li a{
+        font-size: 32px;
+    }
+    .vtabs .nav-link{
+        margin-bottom: 80px;
+    }
+    .vtab-content .card-body .content ul li{
+        margin-bottom: 50px;
+    }
+    .work-slider-text span, .view-detail a, footer .quick-links a span, footer .social-ul li p{
+        font-size: 18px;
+    }
+    .work-slider-text h3{
+        font-size: 60px;
+    }
+    .work-slider-text p, .counter-info, .total-count{
+        font-size: 24px;
+    }
+    footer h2{
+        font-size: 50px;
+    }
+}
 
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
