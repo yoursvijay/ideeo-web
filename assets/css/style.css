@@ -602,9 +602,11 @@ body {
 
 .sliderBottom{
     position: absolute;
-    bottom: 0;
     width: 100%;
-    right: 13px;
+    height: 179px;
+    right: 12px;
+    background-color: #0062BC;
+    max-width: 787px;
 }
 .sliderBottom .sliderBtns{
     display: flex;
@@ -633,10 +635,7 @@ body {
     border: 2px solid #FFFFFF;
 }
 .sliderBottom .slider3{
-    background-color: #0062BC;
-    max-width: 786px;
-    height: 179px;
-    margin-left: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     padding: 0 56px;
@@ -688,12 +687,6 @@ body {
     z-index: 99;
 }
 
-
-
-.project-carousel{
-    position: absolute;
-    right: 0;
-}
 
 .project-carousel div.image{
     display: flex;
@@ -1255,7 +1248,7 @@ footer{
     position: relative;
     z-index: 9;
 }
-footer .container,
+footer .container-fluid,
 footer .row{
     height: 100%;
     align-items: center;
@@ -1267,7 +1260,10 @@ footer::after{
     right: 0;
     bottom: 0;
     clear: both;
-    z-index: 1;
+    z-index: -1;
+}
+.footer-inner{
+    margin-left: 175px;
 }
 .footer-links{
     border-left:2px solid #ffffff;

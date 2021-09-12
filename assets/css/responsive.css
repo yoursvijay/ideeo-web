@@ -251,15 +251,14 @@
      .heading-content{
          margin-bottom: 50px;
      }
+     .footer-inner{
+        margin-left: 26px;
+    }
 
  }
 
 
  @media (max-width: 768px) { 
-
-    .top-header{
-        padding: 30px;
-    }
 
     .work-sec .row-1 .heading-content{
         position: initial;
@@ -335,9 +334,7 @@
         padding-top: 16px;
         padding-bottom: 0;
     }
-    .footer-inner{
-        margin-top: 80px;
-    }
+
 
 }
 
@@ -347,7 +344,16 @@
         display: none;
     }
     .top-header{
-        z-index: 9999;
+        z-index: 999999;
+        padding: 10px 30px;
+    }
+    #mainNav.navbar-shrink{
+        background-color: #191e25;
+        z-index: 999999;
+        padding: 10px 30px;
+    }
+    #mainNav.navbar-shrink .toggle-menu span{
+        background-color: #ffffff;
     }
     .top-header .toggle-menu{
         display: block;
@@ -359,14 +365,18 @@
         width: 100%;
         overflow-y: auto;
     }
-    /* .menu-drawer .container .cap-ul{
-        margin-top: 200px;
-    } */
+
     .sidepanel-contact ul li ul{
         display: block;
     }
     .sidepanel-contact ul li ul li:not(:first-child){
         margin-left: 0;
+    }
+    .sliderBottom{
+        position: initial;
+    }
+    .testi-content .card-body{
+        max-height: 100% ;
     }
     .testi-img-card{
         display: none;
@@ -375,9 +385,21 @@
         display: block !important;
     }
 
+    .blog-heading{
+        position: initial;
+        margin-top: 110px;
+    }
+    .blog-card{
+        padding-top: 0;
+    }
+
     footer{
-        height: auto;
         overflow: hidden;
+        height: auto;
+        margin-top: 100px;
+    }
+    .footer-inner{
+        margin: 100px 30px;
     }
 
 
@@ -402,9 +424,7 @@
     .sidepanel-contact ul{
         padding-left: 0;
     }
-    .top-header{
-        padding: 30px 60px;
-    }
+
     .hero-banner{
         position: relative;
     }
@@ -467,9 +487,7 @@
     .award-box h5{
         font-size: 18px;
     }
-    .footer-inner{
-        margin-top: 130px;
-    }
+
 
 
 }
@@ -485,9 +503,6 @@
     }
     .blog-sec{
         padding-left: 90px;
-    }
-    .footer-inner{
-        padding-left: 190px;
     }
 }
 
