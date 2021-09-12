@@ -23,6 +23,7 @@
     .blog-sec .grid-blog{
         padding-left: 80px;
     }
+
 }
 
 @media (min-width: 1700px) and (max-width:1920px){
@@ -180,7 +181,16 @@
 
 
 @media only screen and (min-width:576px) and (max-width: 767.98px) { 
-
+    .menu-drawer .container .cap-ul{
+        padding-left: 0;
+        margin-top: 450px;
+    }
+    .menu-drawer .container .sm-ul{
+        padding-left: 0;
+    }
+    .sidepanel-contact ul{
+        padding-left: 0;
+    }
     .banner .banner-content h1{
         font-size: 60px;
     }
@@ -188,7 +198,16 @@
 
 
  @media only screen and (min-width:768px) and (max-width: 991.98px) {
-         
+    .menu-drawer .container .cap-ul{
+        padding-left: 0;
+        margin-top: 200px;
+    }
+    .menu-drawer .container .sm-ul{
+        padding-left: 0;
+    }
+    .sidepanel-contact ul{
+        padding-left: 0;
+    }       
     .hero-banner{
         position: relative;
     }
@@ -229,6 +248,14 @@
 
  
  @media (max-width: 767.98px){ 
+    .menu-drawer .container .cap-ul{
+        padding-left: 26px;
+        margin-top: 450px;
+    }
+    .menu-drawer .container .sm-ul,
+    .sidepanel-contact ul    {
+        padding-left: 26px;
+    }
     .vtab-content .accordion-header{
         display: block;
     }
@@ -247,6 +274,7 @@
 
 
  @media (max-width: 768px) { 
+
     .top-header{
         padding: 30px;
     }
@@ -350,6 +378,28 @@
     .sidebar-fixed{
         display: none;
     }
+    .top-header{
+        z-index: 9999;
+    }
+    .top-header .toggle-menu{
+        display: block;
+    }
+    .header .an-idea{
+        display: none;
+    }
+    .menu-drawer{
+        width: 100%;
+        overflow-y: auto;
+    }
+    /* .menu-drawer .container .cap-ul{
+        margin-top: 200px;
+    } */
+    .sidepanel-contact ul li ul{
+        display: block;
+    }
+    .sidepanel-contact ul li ul li:not(:first-child){
+        margin-left: 0;
+    }
     .testi-img-card{
         display: none;
     }
@@ -370,8 +420,25 @@
 
 }
 
+@media (max-width:1023.98px){
+    .sidebar-in-logo{
+        display: none;
+    }
+}
+
+
 
 @media only screen and (min-width:991px) and (max-width: 1024px) {
+    .menu-drawer .container .cap-ul{
+        padding-left: 20px;
+        margin-top: 200px;
+    }
+    .menu-drawer .container .sm-ul{
+        padding-left: 20px;
+    }
+    .sidepanel-contact ul{
+        padding-left: 0;
+    }
     .top-header{
         padding: 30px 60px;
     }
