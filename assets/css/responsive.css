@@ -16,10 +16,10 @@
         font-size: 32px;
     }
     .vtabs .nav-link{
-        margin-bottom: 80px;
+        margin-bottom: 72px;
     }
     .vtab-content .card-body .content ul li{
-        margin-bottom: 50px;
+        margin-bottom: 45px;
     }
     .work-slider-text span, .view-detail a, footer .quick-links a span, footer .social-ul li p{
         font-size: 18px;
@@ -29,6 +29,11 @@
     }
     .work-slider-text p, .counter-info, .total-count{
         font-size: 24px;
+    }
+    .award-section-left div .award-mask {
+        top: -80px;
+        left: 0;
+        max-width: 100%;
     }
     footer h2{
         font-size: 50px;
@@ -265,6 +270,7 @@
 
  
  @media (max-width: 767.98px){ 
+     
     .menu-drawer .container .cap-ul{
         padding-left: 26px;
         margin-top: 450px;
@@ -272,6 +278,9 @@
     .menu-drawer .container .sm-ul,
     .sidepanel-contact ul    {
         padding-left: 26px;
+    }
+    .scroll-down{
+        right: 30px;
     }
     .vtab-content .accordion-header{
         display: block;
@@ -322,9 +331,6 @@
         justify-content: center;
     }
 
-    .vtab-content .card-body{
-        display: block;
-    }
 
     .testi-box{
         display: block !important;
