@@ -1247,6 +1247,92 @@ body {
     border: 0;
 }
 
+/* ---./blog end--- */
+
+
+/* ---have-an-idea--- */
+.have-an-idea{
+    height: 100vh;
+    position: relative;
+    z-index: 9;
+}
+
+.have-an-idea .row, .have-an-idea .have-an-idea-column{
+    height: 100%;
+}
+.have-an-idea .have-and-idea-content{
+    position: relative;
+    min-height: 600px;
+    width: 1101px;
+    padding: 100px 100px 100px 180px;
+    background-color: #202020;
+}
+.have-an-idea .have-an-idea-column{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.have-an-idea .have-and-idea-content div h3{
+    font-family: "Orborn";
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.have-an-idea .have-and-idea-content div p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.have-an-idea .have-and-idea-content a.tell-us{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 45px 0 84px;
+}
+.have-an-idea .have-and-idea-content a.tell-us img{
+    margin-left: 38px;
+    max-width: 100%;
+    height: auto;
+}
+
+.have-an-idea .have-and-idea-content div span{
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.have-an-idea .have-and-idea-content div h5 a{
+    font-size: 19px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.have-an-idea .have-and-idea-content::after{
+    content: url("../img/have-an-idea.png");
+    position: absolute;
+    clear: both;
+    top: -20%;
+    right: -16%;
+    z-index: 9;
+}
+.have-an-idea .have-and-idea-content::before{
+    content: '';
+    height: 300px;
+    width: 1px;
+    background-color: #909090;
+    position: absolute;
+    clear: both;
+    top: -36%;
+    right: 145px;
+    z-index: 9;
+}
+/* ---./have-an-idea end--- */
+
 /* ---Footer sec--- */
 footer{
     background: #202020;

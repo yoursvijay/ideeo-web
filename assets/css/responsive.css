@@ -3,7 +3,7 @@
     .banner .banner-content h1{
         font-size: 170px;
     }
-    .heading-content h2{
+    .heading-content h2, .have-an-idea .have-and-idea-content div h3{
         font-size: 70px;
     }
     .heading-content span{
@@ -35,6 +35,10 @@
         left: 0;
         max-width: 100%;
     }
+    .have-an-idea .have-and-idea-content{
+        width: 1200px;
+        margin: 0 auto;
+    }
     footer h2{
         font-size: 50px;
     }
@@ -45,6 +49,20 @@
         max-width: 1400px;
     }
 }
+
+@media only screen and (min-width:1367px) and (max-width: 1440px) {
+    .banner .hero-banner-imgs .img-rt{
+        bottom: 0;
+        right: 0;
+    }
+    .view-detail{
+        bottom: 0;
+    }
+    .blog-sec{
+        padding-left: 90px;
+    }
+}
+
 
 
 @media (min-width: 1200px){
@@ -92,295 +110,35 @@
 }
 
 
+@media (max-width: 1199.98px) {
 
-
-@media only screen and (min-width:320px) and (max-width:575.98px){
-    .top-header{
-        padding: 30px 25px;
-    }
-    .banner .banner-content h1{
-        font-size: 60px;
-    }
-    .banner .hero-banner-imgs .img-lt{
-        top: 12%;
-        left: 10%;
-        max-width: 70%;
-    }
-    .banner .hero-banner-imgs .img-rt{
-        bottom: 0;
-        max-width: 100%;
-    }
-    .heading-content h2{
-        font-size: 42px;
-    }
-    .heading-content span{
-        font-size: 14px;
-    }
-
-    .work-sec .row-1 .heading-content{
-        position: initial;
-    }
-    .work-slider-text{
-        margin-top: 0;
-    }
-    .progress-counter,.progress-counter2 ul{
-        display: none;
-    }
-    .project-carousel div.image{
-        display: block;
-    }
-    .project-carousel div.image img{
-        margin: 0 auto;
-    }
-    .sliderBottom .slider3{
-        padding: 16px 16px 0;
-        height: 80px;
-    }
-    .sliderBottom p{
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-    .sliderBottom .sliderBtns{
-        position: initial;
-        justify-content: center;
-        background-color: #0062BC;
-    }
-    .view-detail{
-        position: initial;
-        padding-left: 0;
-        margin-bottom: 16px;
-    }
-
-    .clients-slider{
-        margin: 0;
-    }
-
-
-    .testi-box{
-        display: block !important;
-    }
-    .testi-img-card{
-        left: auto;
-        margin: 0 auto;
-    }
-    .testi-content .card-body{
-        max-height: 100%;
-        padding: 20px 16px;
-    }
-    .testi-content .card-body p{
-        width: 100%;
-    }
-    .testi-nav{
-        margin-top: 0;
-    }
-
-
-    .award-section-left div{
-        margin-top: 0;
-    }
-
-    .blog-heading{
-        position: initial;
-        margin-top: 110px;
-    }
-    .blog-card{
-        padding-top: 30px;
-    }
-    .blog-card p{
-        margin: 10px 0;
-    }
-    .blog-card .card-body{
-        padding-top: 16px;
-        padding-bottom: 0;
-    }
-
-    .frame-two {
-        left: 0;
-        z-index: -1;
-    }
-    .award-section-left div .award-mask{
-        max-width: 30%;
-    }
-
-}
-
-
-@media only screen and (min-width:576px) and (max-width: 767.98px) { 
-    .menu-drawer .container .cap-ul{
-        padding-left: 0;
-        margin-top: 450px;
-    }
-    .menu-drawer .container .sm-ul{
-        padding-left: 0;
-    }
-    .sidepanel-contact ul{
-        padding-left: 0;
-    }
-    .banner .banner-content h1{
-        font-size: 60px;
-    }
- }
-
-
- @media only screen and (min-width:768px) and (max-width: 991.98px) {
-    .menu-drawer .container .cap-ul{
-        padding-left: 0;
-        margin-top: 200px;
-    }
-    .menu-drawer .container .sm-ul{
-        padding-left: 0;
-    }
-    .sidepanel-contact ul{
-        padding-left: 0;
-    }       
-    .hero-banner{
-        position: relative;
-    }
-    .banner{
-        position: initial;
-    }
-    .banner .banner-content h1{
-        font-size: 92px;
-    }
-    .banner .banner-content span.sm-caption{
-        font-size: 18px;
-    }
-    .banner .hero-banner-imgs .img-lt{
-        left: 0;
-        top: 54%;
-        max-width: 40%;
-    }
-    .banner .hero-banner-imgs .img-rt{
-        right: 0;
-        top: 56%;
-        max-width: 40%;
-    }
-
-    .heading-content h2{
-        font-size: 48px;
-    }
-
-
-    .vtabs .nav-link.active ul li h4,
-    .tab-label ul li span.count{
-        font-size: 22px;
-    }
-
- }
-
- 
- @media (max-width: 767.98px){ 
-     
-    .menu-drawer .container .cap-ul{
-        padding-left: 26px;
-        margin-top: 450px;
-    }
-    .menu-drawer .container .sm-ul,
-    .sidepanel-contact ul    {
-        padding-left: 26px;
-    }
-    .scroll-down{
-        right: 30px;
-    }
-    .vtab-content .accordion-header{
-        display: block;
-    }
-    .vtab-content  .tab-pane{
-        display:block;
-        opacity: 1;      
-     } 
-     .vtabs{
-         display: none;
-     }
-     .heading-content{
-         margin-bottom: 50px;
-     }
-     .footer-inner{
-        margin-left: 26px;
-    }
-
- }
-
-
- @media (max-width: 768px) { 
-
-    .work-sec .row-1 .heading-content{
-        position: initial;
-    }
-    .work-slider-text{
-        margin-top: 0;
-    }
-    .project-carousel div.image img:first-child{
-        display: none;
-    }
-    .sliderBottom{
-        position: initial;
-        right: 0;
-    }
-    .sliderBottom p{
-        font-size: 24px;
-        margin-bottom: 0;
-    }
-    .sliderBottom .slider3{
-        padding: 16px 16px 0;
+    .clients-sec, .blog-sec, .tesimonial-sec, .award-section , .offerings-sec , .work-sec, .have-an-idea{
         height: auto;
     }
-    .sliderBottom .sliderBtns{
-        position: initial;
-        background-color: #0062BC;
-        justify-content: center;
+    .blog-sec .container, .blog-sec .container .grid-blog{
+        height: auto;
     }
-
-
-    .testi-box{
-        display: block !important;
+    .have-an-idea .have-and-idea-content div h3{
+        font-size: 42px;
     }
-
-    .testi-content .card-body{
-        padding: 40px;
-        max-height: auto;
+    .have-an-idea .have-and-idea-content{
+        padding: 100px 0 0 50px;
+        z-index: 9;
     }
-    .testi-content .card-body p{
-        width: 100%;
+    .have-an-idea .have-and-idea-content::after{
+        top: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.1;
     }
-    .progress-counter2{
+    .have-an-idea .have-and-idea-content::before{
         display: none;
     }
-    
-    .testi-nav{
-        margin-top: 0;
-    }
+  }
 
 
-    .award-section-left div{
-        margin-top: 0;
-    }
-    .award-section-left div .award-mask {
-        position: absolute;
-        left: 0;
-        max-width: 100%;
-    }
 
-    .blog-heading{
-        position: initial;
-        margin-top: 110px;
-    }
-    .blog-card{
-        padding-top: 30px;
-    }
-    .blog-card p{
-        margin: 10px 0;
-    }
-    .blog-card .card-body{
-        padding-top: 16px;
-        padding-bottom: 0;
-    }
-
-
-}
-
-
-@media (max-width: 1024px) { 
+  @media (max-width: 1024px) { 
     .sidebar-fixed{
         display: none;
     }
@@ -529,36 +287,313 @@
         font-size: 18px;
     }
 
-
-
 }
 
-
-@media only screen and (min-width:1367px) and (max-width: 1440px) {
+  @media only screen and (min-width:768px) and (max-width: 991.98px) {
+    .menu-drawer .container .cap-ul{
+        padding-left: 0;
+        margin-top: 200px;
+    }
+    .menu-drawer .container .sm-ul{
+        padding-left: 0;
+    }
+    .sidepanel-contact ul{
+        padding-left: 0;
+    }       
+    .hero-banner{
+        position: relative;
+    }
+    .banner{
+        position: initial;
+    }
+    .banner .banner-content h1{
+        font-size: 92px;
+    }
+    .banner .banner-content span.sm-caption{
+        font-size: 18px;
+    }
+    .banner .hero-banner-imgs .img-lt{
+        left: 0;
+        top: 54%;
+        max-width: 40%;
+    }
     .banner .hero-banner-imgs .img-rt{
-        bottom: 0;
+        right: 0;
+        top: 56%;
+        max-width: 40%;
+    }
+
+    .heading-content h2{
+        font-size: 48px;
+    }
+
+
+    .vtabs .nav-link.active ul li h4,
+    .tab-label ul li span.count{
+        font-size: 22px;
+    }
+
+ }
+
+
+ @media (max-width: 768px) { 
+
+    .work-sec .row-1 .heading-content{
+        position: initial;
+    }
+    .work-slider-text{
+        margin-top: 0;
+    }
+    .project-carousel div.image img:first-child{
+        display: none;
+    }
+    .sliderBottom{
+        position: initial;
         right: 0;
     }
-    .view-detail{
+    .sliderBottom p{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .sliderBottom .slider3{
+        padding: 16px 16px 0;
+        height: auto;
+    }
+    .sliderBottom .sliderBtns{
+        position: initial;
+        background-color: #0062BC;
+        justify-content: center;
+    }
+
+
+    .testi-box{
+        display: block !important;
+    }
+
+    .testi-content .card-body{
+        padding: 40px;
+        max-height: auto;
+    }
+    .testi-content .card-body p{
+        width: 100%;
+    }
+    .progress-counter2{
+        display: none;
+    }
+    
+    .testi-nav{
+        margin-top: 0;
+    }
+
+
+    .award-section-left div{
+        margin-top: 0;
+    }
+    .award-section-left div .award-mask {
+        position: absolute;
+        left: 0;
+        max-width: 100%;
+    }
+
+    .blog-heading{
+        position: initial;
+        margin-top: 110px;
+    }
+    .blog-card{
+        padding-top: 30px;
+    }
+    .blog-card p{
+        margin: 10px 0;
+    }
+    .blog-card .card-body{
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media only screen and (min-width:576px) and (max-width: 767.98px) { 
+    .menu-drawer .container .cap-ul{
+        padding-left: 0;
+        margin-top: 450px;
+    }
+    .menu-drawer .container .sm-ul{
+        padding-left: 0;
+    }
+    .sidepanel-contact ul{
+        padding-left: 0;
+    }
+    .banner .banner-content h1{
+        font-size: 60px;
+    }
+ }
+
+
+
+ 
+ @media (max-width: 767.98px){ 
+     
+    .menu-drawer .container .cap-ul{
+        padding-left: 26px;
+        margin-top: 450px;
+    }
+    .menu-drawer .container .sm-ul,
+    .sidepanel-contact ul    {
+        padding-left: 26px;
+    }
+    .scroll-down{
+        right: 30px;
+    }
+    .vtab-content .accordion-header{
+        display: block;
+    }
+    .vtab-content  .tab-pane{
+        display:block;
+        opacity: 1;      
+     } 
+     .vtabs{
+         display: none;
+     }
+     .heading-content{
+         margin-bottom: 50px;
+     }
+
+
+     .footer-inner{
+        margin-left: 26px;
+    }
+
+ }
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:575.98px){
+    .top-header{
+        padding: 30px 25px;
+    }
+    .banner .banner-content h1{
+        font-size: 60px;
+    }
+    .banner .hero-banner-imgs .img-lt{
+        top: 12%;
+        left: 10%;
+        max-width: 70%;
+    }
+    .banner .hero-banner-imgs .img-rt{
         bottom: 0;
+        max-width: 100%;
     }
-    .blog-sec{
-        padding-left: 90px;
+    .heading-content h2{
+        font-size: 42px;
     }
+    .heading-content span{
+        font-size: 14px;
+    }
+
+    .work-sec .row-1 .heading-content{
+        position: initial;
+    }
+    .work-slider-text{
+        margin-top: 0;
+    }
+    .progress-counter,.progress-counter2 ul{
+        display: none;
+    }
+    .project-carousel div.image{
+        display: block;
+    }
+    .project-carousel div.image img{
+        margin: 0 auto;
+    }
+    .sliderBottom .slider3{
+        padding: 16px 16px 0;
+        height: 80px;
+    }
+    .sliderBottom p{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .sliderBottom .sliderBtns{
+        position: initial;
+        justify-content: center;
+        background-color: #0062BC;
+    }
+    .view-detail{
+        position: initial;
+        padding-left: 0;
+        margin-bottom: 16px;
+    }
+
+    .clients-slider{
+        margin: 0;
+    }
+
+
+    .testi-box{
+        display: block !important;
+    }
+    .testi-img-card{
+        left: auto;
+        margin: 0 auto;
+    }
+    .testi-content .card-body{
+        max-height: 100%;
+        padding: 20px 16px;
+    }
+    .testi-content .card-body p{
+        width: 100%;
+    }
+    .testi-nav{
+        margin-top: 0;
+    }
+
+
+    .award-section-left div{
+        margin-top: 0;
+    }
+
+    .blog-heading{
+        position: initial;
+        margin-top: 110px;
+    }
+    .blog-card{
+        padding-top: 30px;
+    }
+    .blog-card p{
+        margin: 10px 0;
+    }
+    .blog-card .card-body{
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .frame-two {
+        left: 0;
+        z-index: -1;
+    }
+    .award-section-left div .award-mask{
+        max-width: 30%;
+    }
+    .have-an-idea .have-and-idea-content{
+        padding: 100px 16px;
+    }
+
 }
 
 
 
-@media (max-width: 1199.98px) {
-    .clients-sec{
-        height: auto;
-    }
-    .blog-sec, .tesimonial-sec, .award-section , .offerings-sec , .work-sec{
-        height: auto;
-    }
-    .blog-sec .container, .blog-sec .container .grid-blog{
-        height: auto;
-    }
-  }
+
+
+
+
+
+
+
+
+
+
 
 
