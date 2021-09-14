@@ -10,13 +10,14 @@
         font-size: 20px;
     }
     .vtab-content .card-body .content p, .vtab-content .card-body .content ul li{
-        font-size: 20px;
+        font-size: 19px;
+        line-height: 30px;
     }
     .tab-label ul li h4, .tab-label ul li span.count, .vtabs .nav-link.active ul li h4, footer .social-ul li ul li a{
         font-size: 32px;
     }
     .vtabs .nav-link{
-        margin-bottom: 72px;
+        margin-bottom: 68px;
     }
     .vtab-content .card-body .content ul li{
         margin-bottom: 45px;
