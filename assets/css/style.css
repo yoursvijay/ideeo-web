@@ -12,14 +12,15 @@
     scroll-behavior: smooth;
 }
 
-a, a:visited, a:hover{
-    text-decoration: none;
-}
-
 body {
     font-family: "EuclidSquare-Regular", Arial, sans-serif;  
     width: 100%;
 }
+
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
 .main{
     width: 100%;
     overflow-y: auto;
@@ -54,9 +55,6 @@ body {
     visibility: hidden;
     transform: translate(-110%);
   }
-  .gooey-inside{
-      position: absolute;
-  }
  
   .open{
     visibility: visible;
@@ -64,8 +62,18 @@ body {
   }
 .gooey{
     position: absolute;
-    right: -23px;
-    top: 41%;
+    right: -56px;
+    max-width: 100%;
+    margin-top: -30px;
+}
+.menu-drawer .container-fluid{
+    position: relative;
+}
+.gooey-inside{
+    position: absolute;
+    width: 5%;
+    top: 26%;
+    right: 0;
 }
   .backdrop{
     position: fixed;

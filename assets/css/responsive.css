@@ -6,7 +6,7 @@
     .heading-content h2, .have-an-idea .have-and-idea-content div h3{
         font-size: 70px;
     }
-    .heading-content span{
+    .heading-content span, .work-slider-text p, .counter-info, .total-count{
         font-size: 20px;
     }
     .vtab-content .card-body .content p, .vtab-content .card-body .content ul li{
@@ -28,9 +28,7 @@
     .work-slider-text h3{
         font-size: 60px;
     }
-    .work-slider-text p, .counter-info, .total-count{
-        font-size: 24px;
-    }
+
     .award-section-left div .award-mask {
         top: -80px;
         left: 0;
