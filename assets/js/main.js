@@ -16,7 +16,16 @@ $(function() {
     });
   });
 
+//  Header Sticky ========================
 
+    	$(window).on('scroll',function() {
+		if ($(this).scrollTop() > 120){  
+			$('.top-header').addClass("nav-sticky");
+		}
+		else{
+			$('.top-header').removeClass("nav-sticky");
+		}
+	});
 
 
 // Work Slider======================
