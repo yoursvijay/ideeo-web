@@ -916,13 +916,13 @@
         </div>
     </div>
     <div class="row grid-blog">
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>01</h3>
                 </div>
                 <div class="card-body">
-                    <img src="./assets/img/blog-img1.png" alt="">
+                    <img src="./assets/img/blogs/blog-img1.png" alt="">
                     <p>ANDROID 12: WHAT LIES AHEAD</p>
                 </div>
                 <div class="card-footer">
@@ -930,13 +930,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>02</h3>
                 </div>
                 <div class="card-body">
-                    <img src="./assets/img/blog-img2.png" alt="">
+                    <img src="./assets/img/blogs/blog-img1.png" alt="">
                     <p>ANDROID 12: WHAT LIES AHEAD</p>
                 </div>
                 <div class="card-footer">
@@ -944,7 +944,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="card blog-card">
+                <div class="card-header">
+                    <h3>02</h3>
+                </div>
+                <div class="card-body">
+                    <img src="./assets/img/blogs/blog-img1.png" alt="">
+                    <p>ANDROID 12: WHAT LIES AHEAD</p>
+                </div>
+                <div class="card-footer">
+                    <span>APR 1, 2021</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>03</h3>
@@ -959,7 +973,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>04</h3>
@@ -974,7 +988,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>05</h3>
@@ -989,7 +1003,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card blog-card">
                 <div class="card-header">
                     <h3>06</h3>
@@ -1003,7 +1017,7 @@
                     <span>APR 1, 2021</span>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </section>
@@ -1114,39 +1128,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="./assets/vendors/slick/slick.min.js"></script>
-    <script src="./assets/vendors/pagepiling.min.js"></script>
-    
-    <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/main.js"></script>
 
     <!-- ./Script Files End-->
 
 
-	<script type="text/javascript">
-        $(document).ready(function() {
-            $('#pagepiling').pagepiling({
-                menu: '#myMenu',
-                direction: 'vertical',
-                anchors: [],
-                scrollingSpeed: 600,
-                loopBottom: false,
-                loopTop: false,
-                css3: false,
-                navigation: true,
-                // normalScrollElements: null,
-                // normalScrollElementTouchThreshold: 5,
-                touchSensitivity: 5,
-                keyboardScrolling: true,
-                sectionSelector: '.section',
-                animateAnchor: false,
+	<!-- // Header Sticky -->
+<script>
+    	$(window).on('scroll',function() {
+		if ($(this).scrollTop() > 120){  
+			$('.top-header').addClass("nav-sticky");
+		}
+		else{
+			$('.top-header').removeClass("nav-sticky");
+		}
+	});
 
-                //events
-                onLeave: function(index, nextIndex, direction){},
-                afterLoad: function(anchorLink, index){},
-                afterRender: function(){},
-            });
-        });
-	</script>
-
+</script>
 
 </body>
 </html>

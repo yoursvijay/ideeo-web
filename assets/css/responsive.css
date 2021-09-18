@@ -17,10 +17,10 @@
         font-size: 32px;
     }
     .vtabs .nav-link{
-        margin-bottom: 68px;
+        margin-bottom: 58px;
     }
     .vtab-content .card-body .content ul li{
-        margin-bottom: 45px;
+        margin-bottom: 30px;
     }
     .work-slider-text span, .view-detail a, footer .quick-links a span, footer .social-ul li p{
         font-size: 18px;
@@ -78,7 +78,8 @@
         width: 90%;
     }
     .blog-sec .grid-blog{
-        padding-left: 80px;
+        padding-left: 130px;
+        padding-right: 130px;
     }
 
 }

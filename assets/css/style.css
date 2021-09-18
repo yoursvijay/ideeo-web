@@ -16,34 +16,16 @@ html, body {
     font-family: "EuclidSquare-Regular", Arial, sans-serif;  
     margin:0;
     padding:0;
-    overflow:hidden;
-}
-.pp-section {
-    height:100%;
-    position:absolute;
-    width:100%;
     background-color: #ffffff;
 }
-.pp-easing {
-    -webkit-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -moz-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -o-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    /* custom */
-    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    /* custom */
-}
 
-.pp-scrollable{
-    overflow-y: scroll;
-    height: 100%;
-}
 
 a, a:visited, a:hover{
     text-decoration: none;
+}
+
+.nav-sticky .an-idea{
+    display: none;
 }
 
 /* --Sidebar-- */
@@ -277,7 +259,7 @@ a, a:visited, a:hover{
     left: 0;
     right:0;
     background-color: transparent;
-    padding: 40px 120px 30px;
+    padding: 30px 120px;
     z-index: 99;
 }
 .header{
@@ -438,7 +420,7 @@ a, a:visited, a:hover{
 /* headings */
 .heading-content{
     text-align: center;
-    margin: 110px 0 100px 0;
+    margin: 70px 0 100px 0;
 }
 .heading-content h2{
     font-family: "Orborn";
@@ -1231,12 +1213,12 @@ a, a:visited, a:hover{
     height: 100%;
     border-right:1px solid #F2F2F2;
 }
-.grid-blog .col:last-child{
+.grid-blog > div:last-child{
     border-right: 0;
 }
 .blog-card{
     border: 0;
-    width: 220px;
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 192px;
     background-color: transparent;
@@ -1271,11 +1253,17 @@ a, a:visited, a:hover{
 .blog-card .card-body img{
     max-width: 100%;
     height: auto;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
 }
 .blog-card .card-footer,
 .blog-card .card-header{
     background-color: transparent;
     border: 0;
+}
+.blog-card:hover .card-body img{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
 }
 
 /* ---./blog end--- */
