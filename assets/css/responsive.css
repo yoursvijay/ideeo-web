@@ -97,12 +97,21 @@
 }
 
 @media (min-width: 1200px) and (max-width:1366.98px) {
+
     .banner .banner-content h1{
         font-size: 120px;
     }
     .banner .hero-banner-imgs img{
         max-width: 40%;
     }
+    .heading-content{
+        margin: 100px 0 60px;
+    }
+    .heading-content h2{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
     .footer-inner{
         margin-left: 150px;
     }

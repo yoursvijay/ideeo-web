@@ -23,15 +23,14 @@
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-
+    
     <!-- Vendors -->
     <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
-
-
+    
 
 </head>
-<body>
+<html>
     
 
 
@@ -65,9 +64,12 @@
                 </header>
             </div>
         </div>
+
 </div>
 <!-- ./Header end -->
-        
+
+<div id="pagepiling">
+
 <!-- Hero Banner -->
 <section class="section">
     <div class="container-fluid hero-banner ">
@@ -97,8 +99,8 @@
 <!-- ./Hero Banner end-->
 
 <!-- Our Offerings -->
-<section class="section">
-    <div class="container-fluid offerings-sec " id="Products">
+<section class="section" id="Products">
+    <div class="container-fluid offerings-sec " >
         <div class="row">
             <div class="col-lg-12">
                 <div class="heading-content">
@@ -452,8 +454,8 @@
 
 
 <!-- Work Sec -->
-<section class="section">
-    <div class="container-fluid work-sec " id="Work">
+<section class="section" id="Work">
+    <div class="container-fluid work-sec">
         <div class="row row-1">
             <div class="col-lg-12">  
                 <div class="heading-content">
@@ -549,8 +551,8 @@
 
 
 <!-- Our Clients -->
-<section class="section">
-        <div class="container clients-sec " id="Clients">
+<section class="section" id="Clients">
+        <div class="container clients-sec">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="heading-content">
@@ -654,7 +656,7 @@
 
 
 <!-- Testimonial sec -->
-<section class="section">
+<section class="section" id="Testimonials">
     <div class="container tesimonial-sec ">
         <div class="row">
             <div class="col-lg-12">
@@ -789,8 +791,8 @@
 
 
 <!-- Awards sec-->
-<section class="section">
-<div class="container award-section " id="Awards">
+<section class="section" id="Awards">
+<div class="container award-section " >
     <img class="awards-dot-frame-two" src="./assets/img/Frame.svg" alt="frame">
     <img class="awards-dot-frame-one" src="./assets/img/Frame.svg" alt="frame">
     <div class="row">
@@ -903,8 +905,8 @@
 <!-- ./CTA end -->
 
 <!-- Blogs sec-->
-<section class="section">
-<div class="container-fluid blog-sec" id="Blogs">
+<section class="section" id="Blogs">
+<div class="container-fluid blog-sec">
     <div class="row">
         <div class="col">
             <div class="heading-content blog-heading">
@@ -1010,7 +1012,7 @@
 
 
 <!-- Footer sec -->
-<footer id="Contact">
+<footer id="Contact" class="section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1052,12 +1054,12 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <ul class="cap-ul">
-                        <li><a href="#About"><span>about</span></a></li>
-                        <li><a href="#Services"><span>services</span></a></li>
-                        <li><a href="#Process"><span>process</span></a></li>
-                        <li><a href="#Work"><span>work</span></a></li>
-                        <li><a href="#Products"><span>products</span></a></li>
+                    <ul class="cap-ul" id="myMenu">
+                        <li data-menuanchor="About"><a class="active"  href="#About"><span>about</span></a></li>
+                        <li data-menuanchor="Services"><a href="#Services"><span>services</span></a></li>
+                        <li data-menuanchor="Process"><a href="#Process"><span>process</span></a></li>
+                        <li data-menuanchor="Work"><a href="#Work"><span>work</span></a></li>
+                        <li data-menuanchor="Products"><a href="#Products"><span>products</span></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 me-auto text-center">
@@ -1103,7 +1105,8 @@
    
 </div>
 <!-- ./Sidebar menu end-->
-
+</div>
+</html>
 
 
     <!-- Script Files -->
@@ -1111,10 +1114,38 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="./assets/vendors/slick/slick.min.js"></script>
-    <script src="./assets/js/scrollbar.js"></script>
+    <script src="./assets/vendors/pagepiling.min.js"></script>
+    
     <script src="./assets/js/main.js"></script>
 
     <!-- ./Script Files End-->
+
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                menu: '#myMenu',
+                direction: 'vertical',
+                anchors: [],
+                scrollingSpeed: 600,
+                loopBottom: false,
+                loopTop: false,
+                css3: false,
+                navigation: true,
+                // normalScrollElements: null,
+                // normalScrollElementTouchThreshold: 5,
+                touchSensitivity: 5,
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                animateAnchor: false,
+
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+            });
+        });
+	</script>
 
 
 </body>
