@@ -10,7 +10,7 @@
     -o-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
-    cursor: none;
+    /* cursor: none; */
 }
 
 
@@ -60,7 +60,7 @@ html, body {
 
 
 @media (hover: none) {
-    .cursor {display:none !important;}
+    /* .cursor {display:none !important;} */
   }
 
   .cursor {
@@ -485,7 +485,7 @@ a, a:visited, a:hover{
 }
 .heading-content h2{
     font-family: "Orborn";
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 400;
     line-height: 0.8;
     color: #191E25;
@@ -1318,8 +1318,10 @@ a, a:visited, a:hover{
 }
 .have-an-idea .have-and-idea-content{
     position: relative;
+    width: 100%;
+    max-width: 1101px;
     min-height: 600px;
-    width: 1101px;
+    margin: 0 auto;
     padding: 100px 100px 100px 180px;
     background-color: #202020;
 }
@@ -1329,20 +1331,54 @@ a, a:visited, a:hover{
     align-items: flex-end;
 }
 
-.have-an-idea .have-and-idea-content div h3{
+.have-an-idea .have-and-idea-content h3{
     font-family: "Orborn";
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #ffffff;
     margin-bottom: 0;
 }
-.have-an-idea .have-and-idea-content div p{
+/* .have-an-idea .have-and-idea-content div p{
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
     opacity: 0.7;
+} */
+.have-an-idea .btn-pair{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 60px 0 55px;
 }
+.have-an-idea a:first-child{
+    margin-right: 22px;
+}
+.cta-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 330px;
+    min-height: 78px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    user-select: none;
+    margin-bottom: 16px;
+}
+.cta-btn span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+ }
+.cta-btn-ftll{
+    color: #000000;
+    background-color: #ffffff;
+}
+.cta-btn-outline{
+    color: #ffffff;
+}
+
 .have-an-idea .have-and-idea-content a.tell-us{
     font-weight: 400;
     font-size: 24px;
@@ -1357,7 +1393,7 @@ a, a:visited, a:hover{
     height: auto;
 }
 
-.have-an-idea .have-and-idea-content div span{
+.have-an-idea .have-and-idea-content div .have-an-idea-label{
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
@@ -1372,8 +1408,8 @@ a, a:visited, a:hover{
     content: url("../img/have-an-idea.png");
     position: absolute;
     clear: both;
-    top: -20%;
-    right: -16%;
+    top: -170px;
+    right: -190px;
     z-index: 9;
 }
 .have-an-idea .have-and-idea-content::before{
@@ -1383,8 +1419,8 @@ a, a:visited, a:hover{
     background-color: #909090;
     position: absolute;
     clear: both;
-    top: -36%;
-    right: 145px;
+    top: -190px;
+    right: 170px;
     z-index: 9;
 }
 /* ---./have-an-idea end--- */
@@ -1396,7 +1432,7 @@ footer{
     position: relative;
     z-index: 9;
 }
-footer .container-fluid,
+footer .container,
 footer .row{
     height: 100%;
     align-items: center;
@@ -1411,10 +1447,18 @@ footer::after{
     z-index: -1;
 }
 .footer-inner{
+    margin-top: 40px;
     margin-left: 175px;
 }
+
 .footer-links{
-    border-left:2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 600px;
+    border-bottom: 1px solid #ffffff;
+    padding-right: 90px;
+    padding-bottom: 42px;
 }
 footer h2{
     font-family: "Orborn";
@@ -1426,12 +1470,49 @@ footer h2{
 }
 footer ul{
     list-style: none;
-    padding-left: 59px;
+    padding-left: 0;
 }
+footer .office-address h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: normal;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+}
+footer .office-address a{
+    display: inline-flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+footer .office-address li:last-child a{
+    margin-bottom: 0;
+}
+footer .office-address a i{
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 21px;
+}
+footer .office-address a span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 154%;
+    color: #FFFFFF;
+}
+footer .quick-links{
+    padding-top: 65px;
+}
+footer .quick-links li:not(:last-child) a{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
 footer .quick-links a span{
     font-weight: 400;
     font-size: 12px;
-    line-height: 292%;
+    line-height: normal;
     text-transform: uppercase;
     color: #767676;
 }
@@ -1442,11 +1523,10 @@ footer .social-ul li p{
     font-weight: 400;
     font-size: 14px;
     color: #7B7B7B;
-    margin-top: 130px;
-    margin-bottom: 39px;
 }
 footer .social-ul li ul {
     display: flex;
+    margin: 52px 0 66px;
     padding-left: 0;
 }
 footer .social-ul li ul li:not(:last-child){
