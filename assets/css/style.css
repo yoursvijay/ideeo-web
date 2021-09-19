@@ -1328,7 +1328,7 @@ a, a:visited, a:hover{
 .have-an-idea .have-an-idea-column{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .have-an-idea .have-and-idea-content h3{
