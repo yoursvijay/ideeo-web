@@ -1452,7 +1452,7 @@ footer::after{
 }
 .footer-inner{
     margin-top: 40px;
-    margin-left: 175px;
+    margin-left: 170px;
 }
 
 .footer-links{
@@ -1546,22 +1546,3 @@ footer .social-ul li ul li a:hover{
 /* ---./Footer sec--- */
 
 
-
-.fs-md{
-    font-family: "Orborn";
-    font-size: 65px;
-    font-weight: 400;
-    line-height: 0.8;
-    color: #191E25;
-}
-.text-md{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-}
-.text-sm{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    opacity: 0.7;
-}

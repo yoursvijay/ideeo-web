@@ -20,7 +20,7 @@
 }
 .about-bnr-text h1{
     font-family: "Orborn";
-    font-size: 115px;
+    font-size: 100px;
     font-weight: 400;
     line-height: 0.9;
 }
@@ -28,16 +28,25 @@
     height: 100%;
     align-items: center;
 }
-/* .aboutus-sec::after{
-    content: url("../img/pages/about-img1.png");
-    position: absolute;
-    clear: both;
-    display: block;
-    top: 30%;
-    left:30%;
-    z-index: 1;
-    width: 90%;
-} */
+
+.fs-md{
+    font-family: "Orborn";
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 0.8;
+    color: #191E25;
+}
+.text-md{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+.text-sm{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.7;
+}
 
 .goalbg{
     width: 100%;
@@ -185,6 +194,7 @@
 }
 .leader-box{
     max-width: 315px;
+    margin-bottom: 30px;
     /* margin: 0 auto; */
 }
 .leader-box h4{
@@ -202,8 +212,81 @@
 }
 
 @media (min-width: 1365.98px) and (max-width: 1520px){
-    .our-vision-sec .container, .our-goal-sec .container{
+    .aboutus-sec, .our-vision-sec .container, .our-goal-sec .container{
         max-width: 1200px;
     }
+}
 
+
+@media (max-width:1365.98px){
+    .about-bnr-text h1{
+        font-size: 70px;
+    }
+    .our-goal-sec .fs-md{
+        font-size: 60px;
+    }
+    .our-goal-sec .text-md, .our-vision-sec p{
+        font-size: 16px;
+    }
+    .heading-content p{
+        font-size: 16px;
+    }
+    .creative-sec .count h3{
+        font-size: 36px;
+    }
+}
+
+@media (max-width:991px){
+    .aboutus-sec{
+        text-align: center;
+        margin: 120px auto 30px;
+    }
+    .our-vision-sec-row-two .our-vision-sec-img-box::after{
+        display: none;
+    }
+    .our-vision-sec-row-two{
+        margin-top: -80px;
+    }
+    .our-vision-sec h2{
+        font-size: 48px;
+    }
+    .count div{
+        margin-bottom: 20px;
+    }
+    .creative-sec, .our-leaders{
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:768px){
+    .our-vision-sec{
+        padding-top: 30px;
+    }
+    .our-vision-sec .container{
+        padding-left: 15px;
+    }
+    .our-vision-sec h2{
+        margin-top: 0;
+    }
+    .our-vision-sec-row-two{
+        display: none;
+    }
+
+
+}
+
+@media (max-width:680px){
+    .about-bnr-text h1{
+        font-size: 48px;
+    }
+    .our-goal-sec .fs-md{
+        font-size: 32px;
+    }
+    .our-goal-sec-content{
+        padding: 50px 40px;
+    }
+    .our-goal-sec .text-md, .our-vision-sec p{
+        font-size: 14px;
+    }
 }
