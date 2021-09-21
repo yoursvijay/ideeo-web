@@ -73,11 +73,11 @@
 }
 
 
-@media (min-width: 1400px){
+/* @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1400px;
     }
-}
+} */
 
 @media only screen and (min-width:1367px) and (max-width: 1440px) {
     .banner .hero-banner-imgs .img-rt{
@@ -134,7 +134,12 @@
         font-size: 50px;
         margin-bottom: 10px;
     }
-
+    .have-an-idea .have-and-idea-content::before{
+        top:-140px;
+    }
+    .have-an-idea .have-and-idea-content::after{
+        top: -110px;
+    }
     .footer-inner{
         margin-left: 150px;
     }
@@ -214,7 +219,9 @@
     .sliderBottom p{
         font-size: 18px;
     }
-
+    .vtab-content .card-body .content p{
+        text-align: justify;
+    }
     .testi-content .card-body{
         max-height: 100% ;
     }
@@ -234,13 +241,22 @@
     }
 
 
+    .have-an-idea{
+        margin-top: 30px;
+    }
+    .have-an-idea .have-an-idea-column{
+        padding-bottom: 20px;
+    }
     footer{
         overflow: hidden;
         height: auto;
-        margin-top: 100px;
+        margin-top: 10px;
     }
     .footer-inner{
         margin: 100px 30px;
+    }
+    footer::after{
+        opacity: 0.2;
     }
 
 
