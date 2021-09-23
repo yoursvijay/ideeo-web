@@ -1,0 +1,176 @@
+@media (min-width:1600px){
+    .process-wrapper, .offerings-banner .container{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1366.98px) and (max-width:1599.98px){
+    .process-wrapper, .offerings-banner .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+.an-idea a{
+    color: #ffffff !important;
+    opacity: 0.7;
+}
+
+.offerings-banner{
+    height: 100vh;
+    background-image: url("../img/pages/offerings-banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+.offerings-banner h1{
+    font-family: "Orborn";
+    font-size: 65px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 0.9;
+    margin: 16px 0;
+}
+.offerings-banner .container,
+.offerings-banner .container .row{
+    height: 100%;
+    align-items: center;
+}
+
+
+/* all-offerings */
+.all-offerings{
+    height: 100vh;
+    margin-top: 60px;
+}
+.all-offerings .nav-pills{
+    justify-content: space-between;
+}
+.all-offerings .nav-link{
+    width: 152px;
+    height: 237px;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+.all-offerings .nav-pills .nav-link.active, 
+.all-offerings .nav-pills .show>.nav-link{
+    background-color: #0095DA;
+}
+.all-offerings .nav-link ul{
+    list-style: none;
+    padding-left: 0;
+}
+.all-offerings .nav-link ul li > span{
+    height: 32px;
+    width: 2px;
+    display: block;
+    margin: 26px auto;
+    background-color: transparent;
+}
+.all-offerings .nav-link ul li h6{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #191E25;
+}
+.all-offerings .nav-link ul li h6 span{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 190%;
+    text-align: center;
+    color: #706A6A;
+    opacity: 0.7;
+    display: block;
+    margin-top: 7px;
+}
+.all-offerings  .nav-link ul li img{
+    opacity: 1;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.all-offerings .nav-pills .nav-link.active ul li > span{
+    background-color: #ffffff;
+}
+.all-offerings .nav-pills .nav-link.active ul li h6{
+    color: #ffffff;
+}
+.all-offerings .nav-pills .nav-link.active ul li h6 span{
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.all-offerings .tab-content{
+    padding: 80px 0 16px;
+}
+
+.offering-card {
+    display: flex;
+    align-items: flex-start;
+}
+.offering-card > span{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: normal;
+    color: #706A6A;
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 39px;
+}
+
+.offering-card div h2{
+    font-family: "Orborn";
+    font-size: 38px;
+    font-weight: 600;
+    color: #191E25;
+    line-height: normal;
+    margin-bottom: 52px;
+}
+.offering-card div p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 169.3%;
+    color: #000000;
+    opacity: 0.7;
+}
+.offering-card div ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 50px 0 16px;
+}
+.offering-card div ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.offering-card div ul li span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 276.8%;
+    color: #000000;
+}
+
+@media (max-width:1200px){
+    .offerings-banner{
+        max-height: 600px;
+    }
+    .all-offerings{
+        height: auto;
+        margin-top: 0;
+    }
+}
+@media (max-width:767.98px){
+    .offerings-banner{
+        background-size: cover;
+        background-position: center;
+    }
+    .all-offerings{
+        height: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:374.98px){
+    .all-offerings .nav-pills{
+        justify-content: center !important;
+    }
+}
