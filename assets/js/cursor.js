@@ -5,13 +5,13 @@ $(window).mousemove(function(e) {
     })    
   });
   $(window).mousemove(function(e) {
-    $("a")
+    $("a, .active-cursor")
       .on("mouseenter", function() {   
       $('.cursor').addClass("activecursor")   
     })  
   });
   $(window).mousemove(function(e) {
-    $("a")
+    $("a, .active-cursor")
       .on("mouseleave", function() {    
       $('.cursor').removeClass("activecursor")    
     })
