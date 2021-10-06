@@ -271,14 +271,21 @@ a, a:visited, a:hover{
     color: #191E25;
     display: block;
   }
-  .sidepanel-contact ul li a.lets-do{
-    font-weight: 700;
-    font-size: 27px;
-    color: #000000;
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 30px;
+  .sidepanel-contact .cta-btn{
+      color: #191E25 !important;
+      border-color: #191E25 !important;
   }
+  .sidepanel-contact ul li a.lets-do{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+    color: #191E25;
+  }
+  /* .sidepanel-contact ul li a.lets-do img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 16px;
+} */
   .sidepanel-contact ul li a.mail{
     font-weight: 400;
     font-size: 19px;
@@ -287,11 +294,7 @@ a, a:visited, a:hover{
     align-items: center;
     margin-bottom: 30px;
   }
-  .sidepanel-contact ul li a.lets-do img{
-      max-width: 100%;
-      height: auto;
-      margin-left: 16px;
-  }
+
   .sidepanel-contact ul li ul{
       padding-left:16px;
       display: flex;
@@ -1437,18 +1440,104 @@ a, a:visited, a:hover{
 }
 /* ---./have-an-idea end--- */
 
+/* --footer-- */
+.footer-sec{
+    display: flex;
+    align-items: center;
+    padding-left: 170px;
+}
+.footer-sec .have-and-idea-content{
+    padding: 65px 0;
+}
+.footer-sec .have-and-idea-content h3{
+    font-family: "Orborn";
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.footer-sec .have-and-idea-content .btn-pair{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 60px 0 24px;
+}
+.footer-sec .have-and-idea-content .btn-pair a:first-child{
+   margin-right: 22px;
+}
+.footer-sec .ideeo-address li a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #7B7B7B;
+    display: inline-block;
+    margin: 17px 0;
+}
+.footer-sec .quick-links{
+    display: flex;
+    align-items: flex-start;
+}
+.footer-sec .quick-links ul{
+    margin-top: 16px;
+}
+.footer-sec .quick-links ul:first-child{
+    margin-right: 68px;
+}
+.footer-sec .quick-links li a{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #767676;
+}
+.footer-bottom-row{
+    margin-top: 38px;
+}
+.footer-bottom-row ul{
+    display: flex;
+}
+.footer-bottom-row ul li a{
+    font-size: 20px;
+    color: #767676;
+}
+.footer-bottom-row ul li:not(:last-child) a{
+    margin-right: 26px;
+}
+.footer-bottom-row p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    color: #7B7B7B;
+}
+.getIntouch span{
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.getIntouch h5 a{
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+/* --./footer end-- */
+
+
 /* ---Footer sec--- */
 footer{
-    background: #202020 !important;
+    background: #101011;
     height: 100vh;
     position: relative;
     z-index: 9;
 }
-footer .container,
+/* footer .container,
 footer .row{
     height: 100%;
     align-items: center;
-}
+} */
 
 footer::after{
     content: url("../img/footer-ideeo-mask.png");
@@ -1514,7 +1603,7 @@ footer .office-address a span{
     color: #FFFFFF;
 }
 footer .quick-links{
-    padding-top: 65px;
+    /* padding-top: 65px; */
 }
 footer .quick-links li:not(:last-child) a{
     margin-bottom: 15px;
