@@ -413,13 +413,20 @@ a, a:visited, a:hover{
 }
 .banner .hero-banner-imgs .img-rt{
     right: 0;
-    bottom: 32px;
+    bottom: 0;
 }
 .banner .hero-banner-imgs .img-lt{
     left: 10%;
     bottom: 32px;
-    animation: movetopbottombounce 3s linear infinite;
+    /* animation: movetopbottombounce 3s linear infinite; */
 }
+
+.banner .hero-banner-imgs .img-rt-art{
+    right: 90px;
+    bottom: 110px;
+}
+
+
 
 
 .primaryBtn{

@@ -1,5 +1,11 @@
 
+@media (min-width:1600px){
+
+}
 @media (min-width: 1600px){
+    .hero-banner .container{
+        max-width: 1440px;
+    }
     .banner .banner-content h1{
         font-size: 170px;
     }
@@ -81,16 +87,10 @@
 }
 
 
-/* @media (min-width: 1400px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1400px;
-    }
-} */
-
 @media only screen and (min-width:1367px) and (max-width: 1440px) {
-    .banner .hero-banner-imgs .img-rt{
-        bottom: 0;
-        right: 0;
+    .banner .hero-banner-imgs .img-rt-art {
+        right: 95px;
+        bottom: 110px;
     }
     .view-detail{
         bottom: 0;
@@ -133,7 +133,11 @@
 
 
 @media (min-width: 1200px) and (max-width:1366px) {
-
+    .banner .hero-banner-imgs .img-rt-art {
+        right: 76px;
+        bottom: 76px;
+        max-width: 20%;
+    }
     .banner .banner-content h1{
         font-size: 120px;
     }
