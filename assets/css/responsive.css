@@ -1,7 +1,5 @@
 
-@media (min-width:1600px){
 
-}
 @media (min-width: 1600px){
     .hero-banner .container{
         max-width: 1440px;
@@ -45,20 +43,18 @@
     .have-an-idea .have-and-idea-content{
         max-width: 1200px;
     }
-    .footer-inner{
-        margin-left: 0;
+
+    .footer-sec{
+        padding-left: 0;
     }
-    .footer-links{
-        max-width: 690px;
-    }
-    footer .office-address a, 
-    footer .quick-links li:not(:last-child) a{
+    .footer-sec .office-address a, 
+    .footer-sec .quick-links li:not(:last-child) a{
         margin-bottom: 20px;
     }
-    footer .office-address h5{
+    .footer-sec .office-address h5{
         font-size: 24px;
     }
-    footer h2{
+    .footer-sec h2{
         font-size: 50px;
     }
 
@@ -67,9 +63,6 @@
         font-size: 115px;
     }
 
-    .footer-sec{
-        padding-left: 0;
-    }
 
 
 
@@ -161,9 +154,7 @@
     .have-an-idea .have-and-idea-content::after{
         top: -110px;
     }
-    .footer-inner{
-        margin-left: 120px;
-    }
+
 }
 
 
@@ -260,23 +251,20 @@
     .blog-card{
         padding-top: 0;
     }
-
-
     .have-an-idea{
         margin-top: 30px;
     }
     .have-an-idea .have-an-idea-column{
         padding-bottom: 20px;
     }
-    footer{
+
+    .footer-sec{
+        padding-left: initial;
         overflow: hidden;
         height: auto;
         margin-top: 10px;
     }
-    .footer-inner{
-        margin: 100px 30px;
-    }
-    footer::after{
+    .footer-sec::after{
         opacity: 0.2;
     }
 
@@ -384,7 +372,6 @@
         font-size: 48px;
     }
 
-
     .vtabs .nav-link.active ul li h4,
     .tab-label ul li span.count{
         font-size: 22px;
@@ -432,7 +419,6 @@
     .testi-nav{
         margin-top: 0;
     }
-
 
     .award-section-left div{
         margin-top: 0;
@@ -510,19 +496,13 @@
      .have-an-idea .btn-pair{
          display: block;
      }
-     .footer-inner{
-        margin-left: 26px;
-    }
-    .footer-links{
-        flex-direction: column;
-        padding-right: 0;
-    }
-    footer .quick-links{
+     .footer-sec .have-and-idea-content .btn-pair{
+        display: block;
+     }
+     .footer-sec .quick-links{
         padding-top: 20px;
     }
-    footer .social-ul li ul{
-        margin: 30px 0;
-    }
+
 
  }
 
@@ -628,6 +608,9 @@
     .have-an-idea .have-and-idea-content{
         padding: 100px 16px;
     }
+    .footer-sec .have-and-idea-content .btn-pair a{
+        max-width: 100%;
+     }
 
 }
 

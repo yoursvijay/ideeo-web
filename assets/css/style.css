@@ -57,11 +57,16 @@ html, body {
     overflow-x: hidden;
 }
 
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: #000000;
+}
 
-@media (hover: none) {
-    /* .cursor {display:none !important;} */
-  }
+/* @media (hover: none) {
+    .cursor {display:none !important;}
+} */
 
+/* ----------Custom Cursor---------- */
   .cursor {
     --size: 20px;
     height: var(--size);
@@ -83,18 +88,15 @@ html, body {
     --size: 60px;
     background-color: #ffffff;
   }
+/* ----------./Custom Cursor---------- */
 
 
-a, a:visited, a:hover{
-    text-decoration: none;
-    color: #000000;
-}
-
+/* ----------NavBar---------- */
 .nav-sticky .an-idea{
     display: none;
 }
 
-/* --Sidebar-- */
+/* ----------Sidebar---------- */
 .sidebar-fixed{
     position: fixed;
     width: 80px;
@@ -311,12 +313,12 @@ a, a:visited, a:hover{
     text-transform: uppercase;
     color: #191E25;
   }
-/* --./Sidebar end-- */
+/* ----------./Sidebar end---------- */
 
 
 
 
-/* Header start */
+/*---------- Header start---------- */
 .top-header{
     position: fixed;
     top: 0;
@@ -362,13 +364,11 @@ a, a:visited, a:hover{
     display: none;
 }
 
-
-
-/* ./Header end */
+/* ----------./Header end---------- */
 
 
 
-/* --Hero Banner-- */
+/* ----------Hero Banner---------- */
 .hero-banner, .hero-banner .container{
     position: relative;
     height: 100vh;
@@ -430,7 +430,9 @@ a, a:visited, a:hover{
 }
 
 
+/* ----------./Hero Banner---------- */
 
+/* ----------Buttons-------------- */
 
 .primaryBtn{
     padding: 10px;
@@ -455,8 +457,6 @@ a, a:visited, a:hover{
 .primaryBtn:hover span{
     color: #191E25;
 }
-
-
 .scroll-down{
     display: flex;
     flex-direction: column;
@@ -483,13 +483,10 @@ a, a:visited, a:hover{
     position: inherit;
     bottom: 0;
 }
+/* ----------./Buttons end-------------- */
 
 
-
-/* --./Hero Banner-- */
-
-
-/* headings */
+/* ----------headings---------- */
 .heading-content{
     text-align: center;
     margin: 70px 0 100px 0;
@@ -518,14 +515,13 @@ a, a:visited, a:hover{
     color: #000000;
     opacity: 0.7;
 }
+/* ----------./headings end---------- */
 
 
-
-/* ---offerings-sec--- */
+/* ----------offerings-sec---------- */
 .offerings-sec{
     position: relative;
     height: 100vh;
-    /* background-color:antiquewhite; */
 }
 
 .svg-disable{
@@ -614,9 +610,6 @@ a, a:visited, a:hover{
     -webkit-filter: grayscale(0);
 }
 
-/* .vtab-content .card-body{
-    display: flex;
-} */
 .vtab-content .accordion-body{
     padding: 0;
 }
@@ -646,10 +639,12 @@ a, a:visited, a:hover{
     line-height: 1;
 }
 .vtab-content .accordion-body .content-img{
+    position: relative;
     display: block;
     max-width: 100%;
     height: auto;
     margin-left: auto;
+    z-index: 9;
 }
 .vtab-content .accordion-header{
     display: none;
@@ -678,13 +673,13 @@ a, a:visited, a:hover{
     bottom: 0;
     max-width: 100%;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
-/* ---./offerings-sec--- */
+/* ----------./offerings-sec---------- */
 
 
-/* ---work sec--- */
+/* ----------work sec---------- */
 .work-sec{
     position: relative;
     height: 100vh;
@@ -775,13 +770,9 @@ a, a:visited, a:hover{
     color: #000000;
     opacity: 0.7;
 }
-
-
 .work-progress-status{
     position: relative;
 }
-
-/* ---./work sec--- */
 .work-sec-lt{
     display: flex;
     flex-direction: column;
@@ -791,8 +782,6 @@ a, a:visited, a:hover{
     position: relative;
     z-index: 99;
 }
-
-
 .project-carousel div.image{
     display: flex;
     justify-content: flex-end;
@@ -859,10 +848,10 @@ a, a:visited, a:hover{
   .view-detail a img{
       margin-left: 20px;
   }
+/* ----------./work sec---------- */
 
 
-
-  /* Clients */
+  /* ----------Clients---------- */
   .clients-sec{
       position: relative;
       height: 100vh;
@@ -893,13 +882,8 @@ a, a:visited, a:hover{
       height: auto;
   }
 
-  /* Clients end */
+  /* ----------./Clients end----------*/
 
-
-
-  /* .clients-sec{
-
-  } */
   .slick-prevv{
       width: 20px;
       height: 20px;
@@ -978,7 +962,7 @@ a, a:visited, a:hover{
 
 
 
-/* testimonials */
+/* ----------testimonials---------- */
 
 .tesimonial-sec{
     height: 100vh;
@@ -1021,9 +1005,7 @@ a, a:visited, a:hover{
     left: 0px;
     z-index: 999999999;
 }
-/* .testi-content{
-    max-width: 970px;
-} */
+
 .testi-content .card-body{
     background-color: #191E25;
     max-height: 490px;
@@ -1146,10 +1128,10 @@ a, a:visited, a:hover{
   .slider-nav{
       position: absolute;
   }
+/* ----------./testimonials end---------- */
 
 
-
-/* --award-section-- */
+/* ----------award-section---------- */
 .award-section{
     position: relative;
     height: 100vh;
@@ -1185,7 +1167,6 @@ a, a:visited, a:hover{
     left: 0;
     bottom: 0;
 }
-
 
 .award-box{
     width: 220px;
@@ -1241,10 +1222,10 @@ a, a:visited, a:hover{
 .awards-slide-container{
     margin-top: -120px;
 }
-/* --./award-section end-- */
+/* ----------./award-section end---------- */
 
 
-/* Blogs */
+/* -----------Blogs--------------- */
 .blog-sec{
     height: 100vh;
     position: relative;
@@ -1253,7 +1234,6 @@ a, a:visited, a:hover{
 .blog-heading{
     position: absolute;
     z-index: 9;
-    /* width: 100%; */
     left: 0;
     right: 0;
 
@@ -1322,52 +1302,21 @@ a, a:visited, a:hover{
     transform: scale(1.08);
 }
 
-/* ---./blog end--- */
+/* ----------./blog end---------- */
 
 
-/* ---have-an-idea--- */
-.have-an-idea{
+/* ----------footer---------- */
+.footer-sec{
+    display: flex;
+    align-items: center;
+    padding-left: 170px;
+    background: #101011;
     height: 100vh;
     position: relative;
     z-index: 9;
 }
-
-.have-an-idea .row, .have-an-idea .have-an-idea-column{
-    height: 100%;
-}
-.have-an-idea .have-and-idea-content{
-    position: relative;
-    width: 100%;
-    max-width: 1101px;
-    min-height: 600px;
-    margin: 0 auto;
-    padding: 100px 100px 100px 180px;
-    background-color: #202020;
-}
-.have-an-idea .have-an-idea-column{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-bottom: 60px;
-}
-
-.have-an-idea .have-and-idea-content h3{
-    font-family: "Orborn";
-    font-size: 65px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #ffffff;
-    margin-bottom: 0;
-}
-
-.have-an-idea .btn-pair{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 60px 0 55px;
-}
-.have-an-idea a:first-child{
-    margin-right: 22px;
+.footer-sec .have-and-idea-content{
+    padding: 65px 0;
 }
 .cta-btn{
     display: flex;
@@ -1393,61 +1342,24 @@ a, a:visited, a:hover{
 .cta-btn-outline{
     color: #ffffff !important;
 }
-
-.have-an-idea .have-and-idea-content a.tell-us{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    color: #FFFFFF;
+.footer-sec ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-sec .quick-links li:not(:last-child) a{
+    margin-bottom: 15px;
     display: inline-block;
-    margin: 45px 0 84px;
-}
-.have-an-idea .have-and-idea-content a.tell-us img{
-    margin-left: 38px;
-    max-width: 100%;
-    height: auto;
 }
 
-.have-an-idea .have-and-idea-content div .have-an-idea-label{
-    font-size: 12px;
-    line-height: 150%;
-    color: #FFFFFF;
-    opacity: 0.5;
-}
-.have-an-idea .have-and-idea-content div h5 a{
-    font-size: 19px;
+.footer-sec .quick-links a span{
     font-weight: 400;
-    color: #FFFFFF;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #767676;
 }
-.have-an-idea .have-and-idea-content::after{
-    content: url("../img/have-an-idea.png");
-    position: absolute;
-    clear: both;
-    top: -170px;
-    right: -190px;
-    z-index: 9;
-}
-.have-an-idea .have-and-idea-content::before{
-    content: '';
-    height: 300px;
-    width: 1px;
-    background-color: #909090;
-    position: absolute;
-    clear: both;
-    top: -190px;
-    right: 170px;
-    z-index: 9;
-}
-/* ---./have-an-idea end--- */
-
-/* --footer-- */
-.footer-sec{
-    display: flex;
-    align-items: center;
-    padding-left: 170px;
-}
-.footer-sec .have-and-idea-content{
-    padding: 65px 0;
+.footer-sec .quick-links a:hover span{
+    color: #ffffff;
 }
 .footer-sec .have-and-idea-content h3{
     font-family: "Orborn";
@@ -1523,23 +1435,7 @@ a, a:visited, a:hover{
     color: #FFFFFF;
 }
 
-/* --./footer end-- */
-
-
-/* ---Footer sec--- */
-footer{
-    background: #101011;
-    height: 100vh;
-    position: relative;
-    z-index: 9;
-}
-/* footer .container,
-footer .row{
-    height: 100%;
-    align-items: center;
-} */
-
-footer::after{
+.footer-sec::after{
     content: url("../img/footer-ideeo-mask.png");
     position: absolute;
     right: 0;
@@ -1547,102 +1443,12 @@ footer::after{
     clear: both;
     z-index: -1;
 }
-.footer-inner{
-    margin-top: 40px;
-    margin-left: 170px;
-}
 
-.footer-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 600px;
-    border-bottom: 1px solid #ffffff;
-    padding-right: 90px;
-    padding-bottom: 42px;
-}
-footer h2{
-    font-family: "Orborn";
-    font-size: 42px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #ffffff;
-    margin-bottom: 70px;
-}
-footer ul{
-    list-style: none;
-    padding-left: 0;
-}
-footer .office-address h5{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: normal;
-    color: #FFFFFF;
-    margin-bottom: 35px;
-}
-footer .office-address a{
-    display: inline-flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-footer .office-address li:last-child a{
-    margin-bottom: 0;
-}
-footer .office-address a i{
-    font-size: 20px;
-    color: #ffffff;
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    margin-right: 21px;
-}
-footer .office-address a span{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 154%;
-    color: #FFFFFF;
-}
-footer .quick-links{
-    /* padding-top: 65px; */
-}
-footer .quick-links li:not(:last-child) a{
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
-footer .quick-links a span{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: normal;
-    text-transform: uppercase;
-    color: #767676;
-}
-footer .quick-links a:hover span{
-    color: #ffffff;
-}
-footer .social-ul li p{
-    font-weight: 400;
-    font-size: 14px;
-    color: #7B7B7B;
-}
-footer .social-ul li ul {
-    display: flex;
-    margin: 52px 0 66px;
-    padding-left: 0;
-}
-footer .social-ul li ul li:not(:last-child){
-    margin-right: 26px;
-}
-footer .social-ul li ul li a{
-    font-size: 20px;
-    color: #767676;
-}
-footer .social-ul li ul li a:hover{
-    color: #ffffff;
-}
-/* ---./Footer sec--- */
+/* ---./Footer sec end--- */
 
 
+
+/* ----------Key Frames---------- */
 @keyframes movetopbottombounce {
     0% {
         transform: translateY(0px); 
@@ -1654,10 +1460,10 @@ footer .social-ul li ul li a:hover{
         transform: translateY(0px); 
     } 
 }
+/* ----------Key Frames end---------- */
 
 
-
-/* --Go to top */
+/* ----------Go to top---------- */
 .go-top {
     position:fixed;
     bottom: 5%;
@@ -1677,5 +1483,6 @@ footer .social-ul li ul li a:hover{
     position: absolute; 
     bottom:10px;
     font-size: 28px;
+    border-radius: 4px;
   }
-  
+  /* ----------./Go to top---------- */
