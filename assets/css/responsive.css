@@ -44,7 +44,7 @@
         max-width: 1200px;
     }
 
-    .footer-sec{
+    .footer-sec .stickyfooter{
         padding-left: 0;
     }
     .footer-sec .office-address a, 
@@ -257,13 +257,6 @@
     .have-an-idea .have-an-idea-column{
         padding-bottom: 20px;
     }
-
-    .footer-sec{
-        padding-left: initial;
-        overflow: hidden;
-        height: auto;
-        margin-top: 10px;
-    }
     .footer-sec::after{
         opacity: 0.2;
     }
@@ -274,6 +267,13 @@
 @media (max-width:1023.98px){
     .sidebar-in-logo{
         display: none;
+    }
+    .footer-sec{
+        height: 100%;
+    }
+    .footer-sec .stickyfooter{
+        padding-left: 0;
+        position: inherit;
     }
 }
 
